@@ -1,7 +1,7 @@
 #Project
 
 This is the project for course COMP2113_ENGG1340.
-**Group members:** Aidar Kyshobaev(uid:3035918139, username:aksai4in),   
+**Group members:** Aidar Kyshobaev(uid:3035918139, username:aksai4in), CHANG Ta Chuan Brook(uid:3035601712, username:rooktc0917) 
 
 **Game Idea**
 We would like to develop a single-player role-playing game in which the player will be the adventurer with the final goal of defeating the dragon. There are several roles available for the player to choose from and each of them comes with different strengths and weaknesses. For example, a warrior has more health points and high damage points yet rarely triggers critical strikes. Along the journey, depending on the player’s actions, a series of random events will happen and the player will encounter villagers, knights, monsters, etc. The player can choose to interact with them. Different actions will in turn affect the development of the following story. After defeating enemies, the player will obtain ability points that can be used to upgrade the strengths. The mission of the player is to collect as many points as possible along the journey and figure out the way leading to the dragon to defeat it. There are several endings. Depending on the player’s actions, the journey will lead to different endings.
