@@ -13,12 +13,12 @@ We would like to develop a single-player role-playing game in which the player w
 Several roles with different strengths and weaknesses for the player to choose from
   - Data structures for storing game status:
     Data structure storing the attributes of different roles will be developed and available for the player to choose from
-
-- Create several external files storing the attributes of different roles. The given file will be read in by the program depending on the player's choice of role.
+(Create several external files storing the attributes of different roles. The given file will be read in by the program depending on the player's choice of role.)
 
 Random story development depending on the player's actions
   - Generation of random game sets or events:
     Every gameplay will have a different starting point. Throughout the player’s journey, the story would also unfold differently and randomly partly depending on the     player’s action, and the player might also randomly encounter other characters, which would, in turn, influence the following story.
+(Create several external files storing the different story lines and game events. Based on the player's decision, a stroy line or event will be randomly selected at dfferent stages of the sotry)
 
   - Program codes in multiple files:
     The whole story consists of different chapters, and each chapter would be programmed within an independent file. Depending on the player’s actions and the story
@@ -28,6 +28,7 @@ Saving game/ Loading from the previous game
   - File input/output (e.g., for loading/saving game status):
     The player can choose to save the game and load the game to continue the previous gameplay. When facing a tough decision to be made in the story, the player can
     also choose to save the game before making the decision and load the game and make the decision again if the previous choice doesn’t lead to a good ending.
+(Player's attrubute, story progress, etc.)
 
 Ability point system for the player to upgrade the strengths
   - Data structures for storing game status:
