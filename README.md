@@ -14,6 +14,8 @@ Several roles with different strengths and weaknesses for the player to choose f
   - Data structures for storing game status:
     Data structure storing the attributes of different roles will be developed and available for the player to choose from
 
+- Create several external files storing the attributes of different roles. The given file will be read in by the program depending on the player's choice of role.
+
 Random story development depending on the player's actions
   - Generation of random game sets or events:
     Every gameplay will have a different starting point. Throughout the player’s journey, the story would also unfold differently and randomly partly depending on the     player’s action, and the player might also randomly encounter other characters, which would, in turn, influence the following story.
