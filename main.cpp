@@ -29,7 +29,13 @@ int main(){
         cout << " - Didn't you hear the rumors?\n - There is evil dragon flying around and causing trouble. Let me escort you to the village.\n";
         cout << " - May I know your name?\n";
     }
+    cout << "Plese input your name > ";
+    cin.ignore();
     getline(cin, name);
-    cout << name << ", huh. I've never heard this name before. Where do you come from?";
+    cout << name;
+
+    cout << ", huh. I've never heard this name before. ";
+    
+    
 
 }
