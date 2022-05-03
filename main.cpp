@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <string>
+#include "chapters/chapter_1/farmer.cpp"
 using namespace std;
 
 
@@ -74,11 +75,8 @@ int main(){
     }
     cout << " - So you want to be " << a[stoi(answer) - 1] << "?\n";
     cin.get();
-    cout << " - Well, may the god help you with in your trainings!\n\n";
+    cout << " - Well, may the god help you with your trainings!\n\n";
     cout << "*********************************************************************************************\n";
 
-    srand(time(0));
-    int first_story_line = rand() % 3;
-    
-
+    farmer(name);
 }
