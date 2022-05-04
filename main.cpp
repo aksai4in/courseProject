@@ -4,7 +4,6 @@
 #include <string>
 #include "chapters/chapter_1/farmer.cpp"
 #include "chapters/chapter_1/hunter.cpp"
-#include "chapters/chapter_1/kingdom_knight.cpp"
 using namespace std;
 
 
@@ -83,15 +82,13 @@ int main(){
     cin.get();
     cout << "*********************************************************************************************\n";
     srand(time(0));
-    int first_story_line = rand() % 3;
+    int first_story_line = rand() % 2;
     if(first_story_line == 0){
-        farmer();
+        farmer(name);
     }
     else if(first_story_line == 1){
-        hunter();
+        hunter(name);
     }
-    else if(first_story_line == 2){
-        kingdom_knight();
-    }
+    
     
 }
