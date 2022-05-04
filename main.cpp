@@ -3,6 +3,8 @@
 #include <time.h>
 #include <string>
 #include "chapters/chapter_1/farmer.cpp"
+#include "chapters/chapter_1/hunter.cpp"
+#include "chapters/chapter_1/kingdom_knight.cpp"
 using namespace std;
 
 
@@ -80,6 +82,16 @@ int main(){
     cout << " - Well, may the god help you with your trainings! (Burnson)\n\n";
     cin.get();
     cout << "*********************************************************************************************\n";
-    farmer(name);
+    srand(time(0));
+    int first_story_line = rand() % 3;
+    if(first_story_line == 0){
+        farmer();
+    }
+    else if(first_story_line == 1){
+        hunter();
+    }
+    else if(first_story_line == 2){
+        kingdom_knight();
+    }
     
 }
