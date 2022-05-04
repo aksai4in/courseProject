@@ -4,12 +4,13 @@
 #include <string>
 #include "chapters/chapter_1/farmer.cpp"
 #include "chapters/chapter_1/hunter.cpp"
+#include "main_includes/assign_char.cpp"
 using namespace std;
 
 
 int main(){
     string name, answer;
-    
+    player player;
     cout << "You have been reincarnated into a different world.\n";
     cin.get(); 
     cout << "You find yourself in the forest hungry and thirsty.\n";
@@ -44,6 +45,7 @@ int main(){
     }
     cout << "Plese input your name > ";
     getline(cin, name);
+    player.name = name;
     cout << " - " << name << ", huh. I am Burnson. (hunter)\n";
     cin.get();
     cout << " - Anyway, let's head to the village. (Burnson)\n";
@@ -81,6 +83,13 @@ int main(){
     cout << " - Well, may the god help you with your trainings! (Burnson)\n\n";
     cin.get();
     cout << "*********************************************************************************************\n";
+    cin.get();
+    assign_char(answer, player);
+    cout << "***You are now "<<  a[stoi(answer) - 1] << ". Here are your charecteristics***\n";
+    cout << "Physical stregth level: " << player.strength << "\n";
+    cout << "Maggical power level: " << player.mana << "\n";
+    cout << "Shooting accuracy level: " << player.accuracy << "\n";
+    cin.get();
     srand(time(0));
     int first_story_line = rand() % 2;
     if(first_story_line == 0){
