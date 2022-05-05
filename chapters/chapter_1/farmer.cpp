@@ -4,13 +4,13 @@
 #include "farmer_includes/reported.cpp"
 using namespace std;
 void farmer(string name){
-    cout << " - Hey, stranger, I heard that your name is " << name << ", right? What a weird name!\n";
+    cout << " - Hey, stranger, I heard that your name is " << name << ", right? What a weird name! (farmer)\n";
     cin.get();
-    cout << " - Anyway, since you decided to stay in the village, would you like to help me with some tasks?\n";
+    cout << " - Anyway, since you decided to stay in the village, would you like to help me with some tasks? (farmer)\n";
     cin.get();
-    cout << " - Recently there are some goblins out of nowhere from the forest near the village destroying the farmlands and stealing the crop from us.\n";
+    cout << " - Recently there are some goblins out of nowhere from the forest near the village destroying the farmlands and stealing the crop from us. (farmer)\n";
     cin.get();
-    cout << " - That's unusual. Most of the time monsters won't leave the forest. Can you help me get rid of them?\n";
+    cout << " - That's unusual. Most of the time monsters won't leave the forest. Can you help me get rid of them? (farmer)\n";
     cout << "press 1 for: - Yes, sure\n";
     cout << "press 2 for: - Hmm... is there any other task?\n";
     cout << "Your choice > ";
@@ -47,11 +47,11 @@ void farmer(string name){
             goblins();
         }
         else if(answer == "3"){
-            cout << " - You don't want to do anything, huh!?";
+            cout << " - You don't want to do anything, huh!? (farmer)\n";
             cin.get();
             cout << " - In that case, I'll have to report you to the head of the village!\n";
             cin.get();
-            cout << " - We don't need useless people in this village!";
+            cout << " - We don't need useless people in this village!\n";
             cin.get();
             cout << "   press 1 for: - Oh, actually, I think I'll take on the slimes.\n";
             cout << "   press 2 for: - Don't you have any other task?\n";
@@ -67,9 +67,9 @@ void farmer(string name){
                 slimes();
             }
             else if(answer == "2"){
-                cout << " - At this moment, goblins and slimes are the only problems I am aware of.\n";
+                cout << " - At this moment, goblins and slimes are the only problems I am aware of. (farmer)\n";
                 cin.get();
-                cout << " - So you'll eather have to pick one or... Well you'll see for yourself.\n";
+                cout << " - So you'll eather have to pick one or... Well you'll see for yourself. (farmer)\n";
                 cout << "   press 1 for: - I'll take goblins then.\n";
                 cout << "   press 2 for: - Hmm, slimes it is, then.\n";
                 cout << "   press 3 for: - I don't want to do eaither, sorry.\n";

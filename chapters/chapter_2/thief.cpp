@@ -1,6 +1,10 @@
 #include <iostream>
+#include "thief_includes/monster.cpp"
+#include "thief_includes/fight_orc.cpp"
+#include "thief_includes/run_away_orc.cpp"
+
 using namespace std;
-void thief(){
+void thief(player *player){
     cout << "*********************************************************************************************\n";
     cout << "After leaving the village, you travel alone toward the cave of the dragon deep in the forest.\n It's getting drak, and you decide to take some rest.***\n";
     cin.get();
@@ -47,7 +51,7 @@ void thief(){
         cin.get();
         cout << "***The little boy told you the village is not far away.\n You two hit the road at dawn***\n";
         cin.get();
-        monster();
+        // monster();
         cout << " - It's so quiet. Where are all the animals? I cannot see any of them. What happened? (boy)\n";
         cin.get();
         cout << "***You tell the boy what you heard in the village***\n";
@@ -83,21 +87,19 @@ void thief(){
             cout << "Your choice > ";
             cin >> answer;
         }
-        if(answer == 1){
+        if(answer == "1"){
             fight_orc();
             cout << " - Thank you so much, mister! Without you around we'd be goners by now! (mother)\n";
             cin.get();
             cout << " - Birger, I'm so glad you're alive! |cries| (mother)\n";
-            ci.get();
-            cout << " - We couldn't find you when we were running away from the village, we were worried that 
-            you're still at home, so your dad and I snuck back to look for you, 
-            but we ran into this monster, and you dad were hit (mother)\n";
+            cin.get();
+            cout << " - We couldn't find you when we were running away from the village, we were worried that you're still at home, so your dad and I snuck back to look for you, but we ran into this monster, and you dad were hit (mother)\n";
             cin.get();
             cout << " - Please except my deepest gratitudes mister ... ahm (father)\n";
             cin.get();
-            cout << " - " << name << " (you)\n";
+            cout << " - " << player->name << " (you)\n";
             cin.get();
-            cout << " - Mister " << name << "! (father)\n";
+            cout << " - Mister " << player->name << "! (father)\n";
             cin.get();
             cout << " - If you didn't show up... I couldn't protect anyone... What a shame... (father)\n";
             cin.get();
@@ -131,16 +133,12 @@ void thief(){
             cout << "***After parting with Bireger's parents, you two hit the road next morning***\n";
             cin.get();
         }
-        else if(answer == 2){
+        else if(answer == "2"){
             run_away_orc();
         }
-
-        
     }
     else if(answer == "2"){
-
+        cout << "Get out before it gets ungly\n";
+        cin.get();
     }
-    
-
-
 }   
