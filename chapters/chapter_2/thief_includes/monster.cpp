@@ -6,9 +6,9 @@
 
 using namespace std;
 void monster(){
+    struct monster monster;
     cout << "***As you make your way in the forest, you come here some strange noise in the vicinity***\n";
     cin.get();
-    monster monster;
     rand_monster(&monster);
     cout << "***You come closer to the source of the moise and see" << monster.name << "!***\n";
     cin.get();

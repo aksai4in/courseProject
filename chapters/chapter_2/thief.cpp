@@ -51,7 +51,7 @@ void thief(player *player){
         cin.get();
         cout << "***The little boy told you the village is not far away.\n You two hit the road at dawn***\n";
         cin.get();
-        // monster();
+        monster();
         cout << " - It's so quiet. Where are all the animals? I cannot see any of them. What happened? (boy)\n";
         cin.get();
         cout << "***You tell the boy what you heard in the village***\n";
@@ -78,62 +78,42 @@ void thief(player *player){
         cin.get();
         cout << " - Dad! Mom! That's my parents! Please help them, mister!\n";
         cin.get();
-        cout << "press 1 to save boy's parents\n";
-        cout << "press 2 to run away\n";
+        struct monster orc;
+        orc.level = 6;
+        orc.luck = 4;
+        orc.HP = 90;
+        cout << "press 1 to see the orc's characteristics\n";
+        cout << "press 2 to start a fight\n";
+        cout << "press 3 to escape\n";
         cout << "Your choice > ";
+        string answer;
         cin >> answer;
-        while(answer != "1" && answer != "2"){
+        while(answer != "1" && answer != "2" && answer != "3"){
             cout << "***unknown choice, please try again***\n";
             cout << "Your choice > ";
             cin >> answer;
         }
         if(answer == "1"){
-            fight_orc();
-            cout << " - Thank you so much, mister! Without you around we'd be goners by now! (mother)\n";
+            cout << "   orc level: " << orc.level << "\n";
+            cout << "   orc luck: " << orc.luck << "\n";
+            cout << "   orc HP: " << orc.HP << "\n";
             cin.get();
-            cout << " - Birger, I'm so glad you're alive! |cries| (mother)\n";
-            cin.get();
-            cout << " - We couldn't find you when we were running away from the village, we were worried that you're still at home, so your dad and I snuck back to look for you, but we ran into this monster, and you dad were hit (mother)\n";
-            cin.get();
-            cout << " - Please except my deepest gratitudes mister ... ahm (father)\n";
-            cin.get();
-            cout << " - " << player->name << " (you)\n";
-            cin.get();
-            cout << " - Mister " << player->name << "! (father)\n";
-            cin.get();
-            cout << " - If you didn't show up... I couldn't protect anyone... What a shame... (father)\n";
-            cin.get();
-            cout << " - Thank god you're safe, kiddo! But I think we need to leave soon. There may still be many monsters wandering around the village. Why on Earth did they attack us? (father)\n";
-            cin.get();
-            cout << "***You're explaining to the boy's parents about the dragon, when the boy interrunpts you***\n";
-            cin.get();
-            cout << " - I want to follow you to find the dragon! (Birger)\n";
-            cin.get();
-            cout << " - Huh? (you)";
-            cin.get();
-            cout << " - I said I want to find the dragon together with you! (Birger)\n";
-            cout << " - I want to revenge the village! (Birger)\n";
-            cin.get();
-            cout << "***Not knowing how to respond, you look at his parents***\n";
-            cin.get();
-            cout << " - What are you saying, dear? (mother)\n";
-            cin.get();
-            cout << " - Don't joke around, kid (father)\n";
-            cin.get();
-            cout << " - I'm not joking! I can't forgive the dragon! I want to help to stop it! (boy)\n";
-            cin.get();
-            cout << " - What nonsense! It's too dangerous! You'll just be in a way! (mother)\n";
-            cin.get();
-            cout << " - Hmm, very well, then. (father)\n";
-            cin.get();
-            cout << " - Honey! Are you out of your mind as well!? (mother)\n";
-            cin.get();
-            cout << " - He knows the forest. He may be helpful with directions. (father)\n";
-            cin.get();
-            cout << "***After parting with Bireger's parents, you two hit the road next morning***\n";
-            cin.get();
+            cout << "press 1 to save boy's parents\n";
+            cout << "press 2 to to get away\n";
+            cout << "Your choice > ";
+            cin >> answer;
+            while(answer != "1" && answer != "2"){
+                cout << "***unknown choice, please try again***\n";
+                cout << "Your choice > ";
+                cin >> answer;
+            }
+            if(answer == "1") {fight_orc(player);}
+            else if(answer == "2"){run_away_orc();}
         }
         else if(answer == "2"){
+            fight_orc(player);
+        }
+        else if(answer == "3"){
             run_away_orc();
         }
     }
