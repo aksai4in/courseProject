@@ -24,7 +24,7 @@ void monster(){
         cin >> answer;
     }
     if(answer == "1"){
-        cout << "   monster level: " << monster.level << "\n";
+        cout << "   monster strength: " << monster.strength << "\n";
         cout << "   monster luck: " << monster.luck << "\n";
         cout << "   monster HP: " << monster.HP << "\n";
         cin.get();
