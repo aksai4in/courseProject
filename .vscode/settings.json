@@ -9,6 +9,9 @@
         "xlocnum": "cpp",
         "xutility": "cpp",
         "vector": "cpp",
-        "xstring": "cpp"
+        "xstring": "cpp",
+        "iomanip": "cpp",
+        "system_error": "cpp",
+        "xlocale": "cpp"
     }
 }
