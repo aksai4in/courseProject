@@ -2,7 +2,7 @@
 using namespace std;
 struct monster{
     string name;
-    int level;
+    int strength;
     int luck;
     int HP;
 };
