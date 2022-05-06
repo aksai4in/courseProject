@@ -6,20 +6,17 @@ void fight_monster(monster_attribute *monster, attribute *player){
 
     if (player->role == "Warrior"){
         cout << "***You draw your sword out and prepare to fight " << monster->name << ".***\n";
-        cin.get();
     }
 
     else if (player->role == "Archer"){
         cout << "***You draw an arrow out and prepare to fight " << monster->name << ".***\n";
-        cin.get();
     }
 
-    else if(player->role == "Mage"){
+    else if (player->role == "Mage"){
         cout << "***You draw your wand out and prepare to fight " << monster->name << ".***\n";
-        cin.get();
     }
 
-
+    cin.get();
 
     while (monster->HP > 0 && player->HP > 0){
         cout << "***Your HP now is " << player->HP << ".***\n\n";
@@ -35,6 +32,14 @@ void fight_monster(monster_attribute *monster, attribute *player){
             monster->HP = monster->HP - player->strength*0.5;
         }
 
+        if (monster->HP <= 0){
+            cout << "***You defeated the monster!***\n";
+            cin.get();
+            cout << "***You continue your travel***\n";
+            cin.get();    
+            break;
+        }
+
         cin.get();
 
         cout << "***" << monster->name << " attack you!***\n";
@@ -46,16 +51,9 @@ void fight_monster(monster_attribute *monster, attribute *player){
             player->HP = player->HP - monster->strength*0.5;
         }
 
-        cin.get();
+        if (player->HP <= 0){
+            cout << "***You are killed by the monster!***\n";
+            cin.get();   
+            break;
+        }
     }
-
-
-    while (monster->HP > 0 && player->HP > 0){
-        
-    };
-
-    cout << "***You defeated the monster!***\n";
-    cin.get();
-    cout << "***You continue your travel***\n";
-    cin.get();
-}
