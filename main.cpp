@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <string>
+#include <vector>
 #include "main_includes/assign_char.cpp"
 #include "chapters/chapter_1/farmer.cpp"
 #include "chapters/chapter_1/hunter.cpp"
@@ -90,9 +91,9 @@ int main(){
     cin.get();
     assign_char(answer, player);
     cout << "***You are now "<<  a[stoi(answer) - 1] << ". Here are your ability attributes***\n";
-    cout << "   Physical stregth level: " << player->strength << "\n";
-    cout << "   Maggical power level: " << player->mana << "\n";
-    cout << "   Shooting accuracy level: " << player->luck << "\n";
+    cout << "   Strength: " << player->strength << "\n";
+    cout << "   Intelligence: " << player->intelligence << "\n";
+    cout << "   Luck: " << player->luck << "\n";
     cin.get();
     srand(time(0));
     int first_story_line = rand() % 2;
@@ -102,5 +103,6 @@ int main(){
     else if(first_story_line == 1){
         hunter(player);
     }
+
     thief(player);
 }
