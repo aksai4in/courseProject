@@ -8,7 +8,7 @@ void farmer(string name){
     cin.get();
     cout << " - Anyway, since you decided to stay in the village, would you like to help me with some tasks? (farmer)\n";
     cin.get();
-    cout << " - Recently there are some goblins out of nowhere from the forest near the village destroying the farmlands and stealing the crop from us. (farmer)\n";
+    cout << " - Recently there is a goblin out of nowhere from the forest near the village destroying farmlands and stealing crop from us. (farmer)\n";
     cin.get();
     cout << " - That's unusual. Most of the time monsters won't leave the forest. Can you help me get rid of them? (farmer)\n";
     cout << "press 1 for: - Yes, sure\n";
@@ -99,25 +99,29 @@ void farmer(string name){
     cin.get();
     cout << " - Oh haven't the hunter told you about the dragon yet? (farmer)\n";
     cin.get();
-    cout << " - The dragon that had been hibernating deep in the forest just woke up.\n   The dragon had been in hibernation since the fierce battle with the knights of the kingdom 100 years ago. (farmer)\n";
+    cout << " - The dragon that had been hibernating deep in the forest just woke up. (farmer)\n";
+    cin.get();    
+    cout << " - The dragon had been in hibernation since the fierce battle with the knights of the kingdom 100 years ago. (farmer)\n";
     cin.get();
-    cout << " - All the monsters are now fleaing away from the dragon and showing up around the village.\n   Parents of the dragon were killed during the battle 100 years ago, and now it wants revenge. (farmer)\n";
+    cout << " - All the monsters are now fleaing away from the dragon and showing up around the village. (farmer)\n";
     cin.get();
+    cout << " - Parents of the dragon were killed during the battle 100 years ago, and now it wants revenge. (farmer)\n";;
+    cin.get();    
     cout << " - Now that it's awake, it will probably also want to come to the village and destroy it. (farmer)\n";
     cin.get();
-    cout << " - But why did the knights of the kingdoms fight the dragons 100 years ago? (you)";
+    cout << " - But why did the knights of the kingdoms fight the dragons 100 years ago? (you)\n";
     cin.get();
     cout << " - To be honest, I don't know why the kingdom would like to fight the dragons deep\n   in the forest then at the first place. We were told that the dragons were planning to invade \n   the Kingdom, but for what? (farmer)\n";
     cin.get();
     cout << " - I don't think it makes sense for the dragons to come all the way out from the forest \n   just to invade the kingdom for no reason. I think the kingdom was hiding something. Anyway, who knows. (farmer)\n";
     cin.get();
     cout << "\n*** Still confused, you decide to ask the knights stationed in the village to learn more ***\n\n";
+    cin.get();    
     cout << " - If the Kingdom said dragons were going to attack the Kingdom, then it must be the case! (knight)\n";
     cin.get();
     cout << " - Are you doubting the credibility of authorities!? (knight)\n";
     cin.get();
-    cout << " - No, it is just that... (you)";
+    cout << " - No, it is just that... (you)\n";
     cin.get();
-    cout << " - All dragons are evil! They don't need a reason to wreak havoc! The good dragon is a dead dragon!\n";
-
+    cout << " - All dragons are evil! They don't need a reason to wreak havoc! The only good dragon is a dead dragon!\n";
 }

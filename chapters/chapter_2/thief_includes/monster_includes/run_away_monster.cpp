@@ -1,5 +1,8 @@
 #include <iostream>
 using namespace std;
 void run_away_monster(){
-    cout << "you got away from the monster and continue your trip\n";
+    cout << "***You run away from the monster.***\n";
+    cin.get();
+    cout << "***You continue your travel***\n";
+    cin.get();
 }
