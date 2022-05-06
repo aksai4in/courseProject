@@ -3,7 +3,7 @@
 #include "hunter_includes/rabbits.cpp"
 #include "hunter_includes/goes_to_forest.cpp"
 using namespace std;
-void hunter(player *player){
+void hunter(attribute *player){
     cout << "Hey, buddy! glad to see that you're doing much better now. (Burnson)\n";
     cin.get();
     cout << "You were in pretty poor shape when I first saw you in the forest. (Burnson)\n";

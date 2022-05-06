@@ -6,6 +6,7 @@ using namespace std;
 
 void fight_monster(monster_attribute *monster, attribute *player){
     srand(time(0));
+
     if (player->role == "Warrior"){
         cout << "***You draw your sword out and prepare to fight " << monster->name << ".***\n";
         cin.get();
@@ -16,8 +17,8 @@ void fight_monster(monster_attribute *monster, attribute *player){
         cin.get();
     }
 
-    else (player->role == "Warrior"){
-        cout << "***You draw your sword out and prepare to fight " << monster->name << ".***\n";
+    else (player->role == "Mage"){
+        cout << "***You draw your wand out and prepare to fight " << monster->name << ".***\n";
         cin.get();
     }
 
@@ -25,7 +26,7 @@ void fight_monster(monster_attribute *monster, attribute *player){
 
     while (monster->HP > 0 && player->HP > 0){
         cout << "***Your HP now is " << player->HP << ".***\n\n";
-        cout << "***" << monster->name << " HP now is " << monster->HP << ".***\n\n"
+        cout << "***" << monster->name << " HP now is " << monster->HP << ".***\n\n";
         cout << "***What do you want to do?***\n";
 
         cout << "***You attack " << monster->name << "!***\n";
@@ -54,7 +55,7 @@ void fight_monster(monster_attribute *monster, attribute *player){
 
     while (monster->HP > 0 && player->HP > 0){
         
-    }
+    };
 
     cout << "***You defeated the monster!***\n";
     cin.get();
