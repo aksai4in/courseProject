@@ -3,6 +3,7 @@
 #include <fstream>
 #include <time.h>
 #include <string>
+#include <vector>
 #include "main_includes/assign_char.cpp"
 #include "main_includes/save.cpp"
 #include "chapters/chapter_1/farmer.cpp"
