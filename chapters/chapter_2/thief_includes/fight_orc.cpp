@@ -44,6 +44,6 @@ void fight_orc(attribute *player){
     cin.get();
     cout << " - He knows the forest. He may be helpful with directions. (father)\n";
     cin.get();
-    cout << "***After parting with Bireger's parents, you two hit the road next morning***\n";
+    cout << "***After parting with Birger's parents, you two hit the road next morning***\n";
     cin.get();
 }

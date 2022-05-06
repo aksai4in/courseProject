@@ -104,5 +104,6 @@ int main(){
         hunter(player);
     }
     shop(player);
+    continue_missions(player);
     thief(player);
 }

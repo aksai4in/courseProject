@@ -57,3 +57,4 @@ void fight_monster(monster_attribute *monster, attribute *player){
             break;
         }
     }
+}
