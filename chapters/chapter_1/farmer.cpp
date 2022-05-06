@@ -3,7 +3,7 @@
 #include "farmer_includes/goblins.cpp"
 #include "farmer_includes/reported.cpp"
 using namespace std;
-void farmer(player *player){
+void farmer(attribute *player){
     cout << " - Hey, stranger, I heard that your name is " << player->name << ", right? What a weird name! (farmer)\n";
     cin.get();
     cout << " - Anyway, since you decided to stay in the village, would you like to help me with some tasks? (farmer)\n";

@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-void shop(player *player){
+void shop(attribute *player){
     cout << " - Good day, mister! (shop owner)\n";
     cin.get();
     cout << " - What would you like to buy? (shop owner)\n";

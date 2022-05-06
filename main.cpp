@@ -96,10 +96,10 @@ int main(){
     srand(time(0));
     int first_story_line = rand() % 2;
     if(first_story_line == 0){
-        farmer(name);
+        farmer(player);
     }
     else if(first_story_line == 1){
-        hunter(name);
+        hunter(player);
     }
     thief(player);
 }
