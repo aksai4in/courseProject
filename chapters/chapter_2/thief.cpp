@@ -120,5 +120,30 @@ void thief(player *player){
     else if(answer == "2"){
         cout << "Get out before it gets ungly\n";
         cin.get();
+        cout << " - I barely have enough food for myself. Go away before it gets ugly! (You)\n";
+        cin.get();
+        cout << " - Please! A little bit of bread would help! How can you be this cruel? (boy)\n";
+        cin.get();
+        cout << " - Leave! It's my food! (You)\n";
+        cin.get();
+        cout << " - You will regret this! (boy)\n";
+        cin.get();
+        cout << "**After the little boy leave, you pack your stuff and prepare to hit the road.\nSuddenly, you head some movements in a bush not from you**\n";
+        cin.get();
+        monster();
+        cin.get();
+        cout << "**When you're going deeper and deeper into the forest, it's become more difficult to tell the direction.**\n";
+        cin.get();
+        cout << "**Even though you've been following the trail, you start to wonder whether you're still on the right track because something seems off**\n";
+        monster();
+        cout << "**Not knowing the correct direction while keeping bumping into monsters, you panic and wander away from the trail**\n";
+        cin.get();
+        impossible_monster();
+        cin.get();
+        cout << "**When you're severely wounded by monsters, the little boy appears in front of you**\n";
+        cin.get();
+        cout << "**It turns out that the little boy keeps on luring monsters to come to you and attack you along the way here**\n";
+        cin.get();
+        cout << "**He wants his revenge on you, and you're going to die soon**\n";
     }
 }   
