@@ -15,7 +15,7 @@ struct player{
     int HP = 100;
     int strength;
     int mana;
-    int accuracy;
+    int luck;
     int experiense_points = 0;
     int money = 0;
     vector<weapon> weapons;
