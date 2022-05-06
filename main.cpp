@@ -51,7 +51,9 @@ int main(){
     cout << " - Anyway, let's head to the village. (Burnson)\n";
     cin.get();
     cout << "*********************************************************************************************\n";
-    cout << "***After arriving to the village and getting some food and rest, you realized that you have ***\n***nowhere to go in this world. You decided to stay in the village to figure things out***\n";
+    cout << "***After arriving to the village and getting some food and rest, you realized that you have ***\n";
+    cin.get();    
+    cout << "***nowhere to go in this world. You decided to stay in the village to figure things out***\n";
     cin.get();
     
     cout << " - Hey, " << name << "! I'm glad that you chose to stay with us, but you might need a job to feed yourself. (Burnson)\n"; 
@@ -85,10 +87,10 @@ int main(){
     cout << "*********************************************************************************************\n";
     cin.get();
     assign_char(answer, &player);
-    cout << "***You are now "<<  a[stoi(answer) - 1] << ". Here are your charecteristics***\n";
+    cout << "***You are now "<<  a[stoi(answer) - 1] << ". Here are your ability attributes***\n";
     cout << "   Physical stregth level: " << player.strength << "\n";
     cout << "   Maggical power level: " << player.mana << "\n";
-    cout << "   Shooting accuracy level: " << player.accuracy << "\n";
+    cout << "   Shooting accuracy level: " << player.luck << "\n";
     cin.get();
     srand(time(0));
     int first_story_line = rand() % 2;
