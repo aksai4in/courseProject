@@ -1,7 +1,7 @@
 #include <iostream>
+#include "monster_includes/rand_monster.cpp"
 #include "monster_includes/fight_monster.cpp"
 #include "monster_includes/run_away_monster.cpp"
-#include "monster_includes/rand_monster.cpp"
 using namespace std;
 
 

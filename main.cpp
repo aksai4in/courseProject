@@ -5,6 +5,7 @@
 #include "main_includes/assign_char.cpp"
 #include "chapters/chapter_1/farmer.cpp"
 #include "chapters/chapter_1/hunter.cpp"
+#include "chapters/chapter_1/shop.cpp"
 #include "chapters/chapter_2/thief.cpp"
 using namespace std;
 
@@ -95,10 +96,10 @@ int main(){
     srand(time(0));
     int first_story_line = rand() % 2;
     if(first_story_line == 0){
-        farmer(name);
+        farmer(&player);
     }
     else if(first_story_line == 1){
-        hunter(name);
+        hunter(&player);
     }
     thief(&player);
 }
