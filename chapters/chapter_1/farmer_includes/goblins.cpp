@@ -9,6 +9,5 @@ void goblins(){
     cin.get();
     cout << "You're still unfamiliar with your weapon, so you are barely able to defeat it\n";
     cin.get();
-    cout << "Finally, you return to the farmer to ask why there are now more and more monsters showing up around the village";
-    cin.get();
+    
 }

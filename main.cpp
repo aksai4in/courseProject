@@ -6,6 +6,7 @@
 #include "chapters/chapter_1/farmer.cpp"
 #include "chapters/chapter_1/hunter.cpp"
 #include "chapters/chapter_1/shop.cpp"
+#include "chapters/chapter_1/continue_missions.cpp"
 #include "chapters/chapter_2/thief.cpp"
 using namespace std;
 
@@ -91,7 +92,7 @@ int main(){
     assign_char(answer, player);
     cout << "***You are now "<<  a[stoi(answer) - 1] << ". Here are your ability attributes***\n";
     cout << "   Physical stregth level: " << player->strength << "\n";
-    cout << "   Maggical power level: " << player->mana << "\n";
+    cout << "   Maggical power level: " << player->intelligence << "\n";
     cout << "   Shooting accuracy level: " << player->luck << "\n";
     cin.get();
     srand(time(0));
@@ -102,5 +103,6 @@ int main(){
     else if(first_story_line == 1){
         hunter(player);
     }
+    shop(player);
     thief(player);
 }

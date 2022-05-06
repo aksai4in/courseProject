@@ -16,9 +16,9 @@ struct attribute{
     string role;
     int HP = 100;
     int strength;
-    int mana;
+    int intelligence;
     int luck;
-    int experiense_points = 0;
+    int experience_points = 0;
     int money = 0;
     vector<weapon> my_weapons;
     vector<potion> my_potions;

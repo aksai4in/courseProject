@@ -23,6 +23,8 @@ void farmer(attribute *player){
     }
     if(answer == "1"){
         goblins();
+        cout << "Finally, you return to the farmer to ask why there are now more and more monsters showing up around the village";
+        cin.get();
     }
     else if(answer == "2"){
         cout << " - Oh, I see that you're scared! Ha ha ha. (Farmer)\n";
@@ -42,9 +44,13 @@ void farmer(attribute *player){
         }
         if(answer == "1"){
             slimes();
+            cout << "You return to the farmer to ask about monsters\n";
+            cin.get();
         }
         else if(answer == "2"){
             goblins();
+            cout << "Finally, you return to the farmer to ask why there are now more and more monsters showing up around the village";
+            cin.get();
         }
         else if(answer == "3"){
             cout << " - You don't want to do anything, huh!? (farmer)\n";
@@ -65,6 +71,8 @@ void farmer(attribute *player){
             }
             if(answer == "1"){
                 slimes();
+                cout << "You return to the farmer to ask about monsters\n";
+                cin.get();
             }
             else if(answer == "2"){
                 cout << " - At this moment, goblins and slimes are the only problems I am aware of. (farmer)\n";
@@ -82,9 +90,13 @@ void farmer(attribute *player){
                 }
                 if(answer == "1"){
                     goblins();
+                    cout << "Finally, you return to the farmer to ask why there are now more and more monsters showing up around the village";
+                    cin.get();
                 }
                 else if(answer == "2"){
                     slimes();
+                    cout << "You return to the farmer to ask about monsters\n";
+                    cin.get();
                 }
                 else if(answer == "3"){
                     reported();

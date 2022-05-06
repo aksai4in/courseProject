@@ -25,6 +25,12 @@ void hunter(attribute *player){
         cin >> answer;
     }
     if(answer == "1"){
+        cout << " - Deer are pretty difficult to find these days. So I don't expect much from you.\n";
+        cin.get();
+        cout << " - But the pay is good if you do kill one\n";
+        cin.get();
+        cout << " - I would suggest you go the north side of the ...\n";
+        cin.get();
         deer();
     }
     else if(answer == "2"){
@@ -42,9 +48,21 @@ void hunter(attribute *player){
             cin >> answer;
         }
         if(answer == "1"){
+            cout << " - Rabbits are easier to find than deer.\n";
+            cin.get();
+            cout << " - So, how about you find 5 of them? Sounds good?\n";
+            cin.get();
+            cout << " - I would suggest you go the East side of the ...\n";
+            cin.get();
             rabbits();
         }
         else if(answer == "2"){
+            cout << " - Deer are pretty difficult to find these days. So I don't expect much from you.\n";
+            cin.get();
+            cout << " - But the pay is good if you do kill one\n";
+            cin.get();
+            cout << " - I would suggest you go the north side of the ...\n";
+            cin.get();
             deer();
         }
         else if(answer == "3"){
@@ -70,9 +88,21 @@ void hunter(attribute *player){
                 cin >> answer;
             }
             if(answer == "1"){
+                cout << " - Deer are pretty difficult to find these days. So I don't expect much from you.\n";
+                cin.get();
+                cout << " - But the pay is good if you do kill one\n";
+                cin.get();
+                cout << " - I would suggest you go the north side of the ...\n";
+                cin.get();
                 deer();
             }
             else if(answer == "2"){
+                cout << " - Rabbits are easier to find than deer.\n";
+                cin.get();
+                cout << " - So, how about you find 5 of them? Sounds good?\n";
+                cin.get();
+                cout << " - I would suggest you go the East side of the ...\n";
+                cin.get();
                 rabbits();
             }
             else if(answer == "3"){
@@ -95,9 +125,21 @@ void hunter(attribute *player){
                     cin >> answer;
                 }
                 if(answer == "1"){
+                    cout << " - Rabbits are easier to find than deer.\n";
+                    cin.get();
+                    cout << " - So, how about you find 5 of them? Sounds good?\n";
+                    cin.get();
+                    cout << " - I would suggest you go the East side of the ...\n";
+                    cin.get();
                     rabbits();
                 }
                 else if(answer == "2"){
+                    cout << " - Deer are pretty difficult to find these days. So I don't expect much from you.\n";
+                    cin.get();
+                    cout << " - But the pay is good if you do kill one\n";
+                    cin.get();
+                    cout << " - I would suggest you go the north side of the ...\n";
+                    cin.get();
                     deer();
                 }
                 else if(answer == "3"){
