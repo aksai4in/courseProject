@@ -4,7 +4,7 @@
 #include "thief_includes/run_away_orc.cpp"
 
 using namespace std;
-void thief(player *player){
+void thief(attribute *player){
     srand(time(0));
     cout << "*********************************************************************************************\n";
     cout << "***After leaving the village, you travel alone toward the cave of the dragon deep in the forest.***\n";
@@ -54,9 +54,9 @@ void thief(player *player){
         cin.get();
         cout << "***The little boy told you the village is not far away.\n You two hit the road at dawn***\n";
         cin.get(); 
-        if (rand()%10 > player->luck){monster();};
+        if (rand()%10 > player->luck){monster_encounter(player);};
         cin.get();
-        if (rand()%10 > player->luck){monster();};
+        if (rand()%10 > player->luck){monster_encounter(player);};
         cin.get();
         cout << " - It's so quiet. Where are all the animals? I cannot see any of them. What happened? (boy)\n";
         cin.get();
@@ -84,7 +84,7 @@ void thief(player *player){
         cin.get();
         cout << " - Dad! Mom! That's my parents! Please help them, mister!\n";
         cin.get();
-        struct monster orc;
+        struct monster_attribute orc;
         orc.strength = 6;
         orc.luck = 4;
         orc.HP = 90;
@@ -136,14 +136,14 @@ void thief(player *player){
         cin.get();
         cout << "**After the little boy leave, you pack your stuff and prepare to hit the road.\nSuddenly, you hear some movements in a bush not from you**\n";
         cin.get();
-        if (rand()%10 > player->luck){monster();};
+        if (rand()%10 > player->luck){monster_encounter(player);};
         cin.get();
-        if (rand()%10 > player->luck){monster();};
+        if (rand()%10 > player->luck){monster_encounter(player);};
         cout << "***When you're going deeper and deeper into the forest, it's become more difficult to tell the direction.***\n";
         cin.get();
         cout << "***Even though you've been following the trail, you start to wonder whether you're still on the right track because something seems off***\n";
         cin.get();    
-        if (rand()%10 > player->luck){monster();};
+        if (rand()%10 > player->luck){monster_encounter(player);};
         cout << "***Not knowing the correct direction while keeping bumping into monsters, you panic and wander away from the trail***\n";
         cin.get();
         cout << "***All of a sudden, you hear many foodsteps behind of you***\n";

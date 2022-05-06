@@ -10,8 +10,9 @@ struct potion{
     string type;
     int effect;
 };
-struct player{
+struct attribute{
     string name;
+    string role;
     int HP = 100;
     int strength;
     int mana;

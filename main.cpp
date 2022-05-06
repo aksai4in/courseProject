@@ -10,7 +10,8 @@ using namespace std;
 
 int main(){
     string name, answer;
-    player player;
+    attribute *player;
+    player = new attribute;
     cout << "You have been reincarnated into a different world.\n";
     cin.get(); 
     cout << "You find yourself in the forest hungry and thirsty.\n";
@@ -45,7 +46,7 @@ int main(){
     }
     cout << "Plese input your name > ";
     getline(cin, name);
-    player.name = name;
+    player->name = name;
     cout << " - " << name << ", huh. I am Burnson. (hunter)\n";
     cin.get();
     cout << " - Anyway, let's head to the village. (Burnson)\n";
@@ -86,11 +87,11 @@ int main(){
     cin.get();
     cout << "*********************************************************************************************\n";
     cin.get();
-    assign_char(answer, &player);
+    assign_char(answer, player);
     cout << "***You are now "<<  a[stoi(answer) - 1] << ". Here are your ability attributes***\n";
-    cout << "   Physical stregth level: " << player.strength << "\n";
-    cout << "   Maggical power level: " << player.mana << "\n";
-    cout << "   Shooting accuracy level: " << player.luck << "\n";
+    cout << "   Physical stregth level: " << player->strength << "\n";
+    cout << "   Maggical power level: " << player->mana << "\n";
+    cout << "   Shooting accuracy level: " << player->luck << "\n";
     cin.get();
     srand(time(0));
     int first_story_line = rand() % 2;
@@ -100,5 +101,5 @@ int main(){
     else if(first_story_line == 1){
         hunter(name);
     }
-    thief(&player);
+    thief(player);
 }
