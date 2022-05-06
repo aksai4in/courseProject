@@ -14,7 +14,7 @@ void fight_monster(monster_attribute *monster, attribute *player){
         cin.get();
     }
 
-    else (player->role == "Mage"){
+    else if(player->role == "Mage"){
         cout << "***You draw your wand out and prepare to fight " << monster->name << ".***\n";
         cin.get();
     }
