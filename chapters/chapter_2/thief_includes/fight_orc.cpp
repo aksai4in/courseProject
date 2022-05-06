@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-void fight_orc(player *player){
+void fight_orc(attribute *player){
     cout << "you defeated the orc\n";
     cin.get();
     cout << " - Thank you so much, mister! Without you around we'd be goners by now! (mother)\n";

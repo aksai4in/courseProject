@@ -11,8 +11,9 @@ struct potion{
     int power;
     int price;
 };
-struct player{
+struct attribute{
     string name;
+    string role;
     int HP = 100;
     int strength;
     int mana;

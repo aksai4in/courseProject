@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include "monster_struct.cpp"
 using namespace std;
-void rand_monster(monster *monster){
+void rand_monster(monster_attribute *monster){
     srand(time(0));
     int type = rand() % 10;
     if(type == 0){
