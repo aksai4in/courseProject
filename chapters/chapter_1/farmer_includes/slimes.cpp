@@ -5,6 +5,4 @@ void slimes(){
     cin.get();
     cout << "Thanks to all your trainings, you are able to defeat them without much problem\n";
     cin.get();
-    cout << "You return to the farmer to ask about monsters\n";
-    cin.get();
 }

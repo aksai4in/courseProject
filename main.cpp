@@ -7,6 +7,7 @@
 #include "chapters/chapter_1/farmer.cpp"
 #include "chapters/chapter_1/hunter.cpp"
 #include "chapters/chapter_1/shop.cpp"
+#include "chapters/chapter_1/continue_missions.cpp"
 #include "chapters/chapter_2/thief.cpp"
 using namespace std;
 
@@ -103,6 +104,7 @@ int main(){
     else if(first_story_line == 1){
         hunter(player);
     }
-
+    shop(player);
+    continue_missions(player);
     thief(player);
 }

@@ -18,7 +18,7 @@ struct attribute{
     int strength;
     int intelligence;
     int luck;
-    int experiense_points = 0;
+    int experience_points = 0;
     int money = 0;
     weapon current_weapon;
     vector<weapon> my_weapons;
