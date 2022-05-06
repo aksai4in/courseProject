@@ -1,4 +1,8 @@
 #include <iostream>
+#include "shop_includes/list_potions_shop.cpp"
+#include "shop_includes/list_potions.cpp"
+#include "shop_includes/list_weapons_shop.cpp"
+#include "shop_includes/list_weapons.cpp"
 using namespace std;
 void shop(attribute *player){
     cout << " - Good day, mister! (shop owner)\n";
@@ -8,7 +12,7 @@ void shop(attribute *player){
     cout << "press 2 to see potions\n";
     cout << "press 3 to exit the shop\n";
     cout << "Your choice > ";
-    string asnwer;
+    string answer;
     cin >> answer;
     while(answer != "1" && answer != "2" && answer != "3"){
         cout << "***unknown choice, please try again***\n";
@@ -57,12 +61,12 @@ void shop(attribute *player){
                 cin >> answer;
             }
             if(stoi(answer) < 3 && stoi(answer) > -1){
-                if(player->money < potion_cost(stoi(answer))){
+                if(player->money < potions[stoi(answer)].price){
                     cout << "***Not enough money***\n";
                     cin.get();
                 }
                 else{
-                    player->money -= potion_cost(stoi(answer));
+                    player->money -= potions[stoi(answer)].price;
                     add_potion(player, stoi(answer));
                     cout << "***A new item purchased***\n";
                     list_potions(player);

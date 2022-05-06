@@ -5,6 +5,7 @@
 #include "main_includes/assign_char.cpp"
 #include "chapters/chapter_1/farmer.cpp"
 #include "chapters/chapter_1/hunter.cpp"
+#include "chapters/chapter_1/shop.cpp"
 #include "chapters/chapter_2/thief.cpp"
 using namespace std;
 
