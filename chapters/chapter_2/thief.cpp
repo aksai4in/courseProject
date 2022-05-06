@@ -2,6 +2,7 @@
 #include "thief_includes/monster.cpp"
 #include "thief_includes/fight_orc.cpp"
 #include "thief_includes/run_away_orc.cpp"
+#include "thief_includes/orc_king.cpp"
 
 using namespace std;
 void thief(player *player){
@@ -50,8 +51,11 @@ void thief(player *player){
         cout << "***Figuring that the little boy won't have any chance to survive alone in the forest, you allow him to follow you till you arrive at the village***\n";
         cin.get();
         cout << "***The little boy told you the village is not far away.\n You two hit the road at dawn***\n";
+        cin.get(); 
+        if (rand()%10 > player->luck){monster()};
         cin.get();
-        monster();
+        if (rand()%10 > player->luck){monster()};
+        cin.get();
         cout << " - It's so quiet. Where are all the animals? I cannot see any of them. What happened? (boy)\n";
         cin.get();
         cout << "***You tell the boy what you heard in the village***\n";
@@ -79,7 +83,7 @@ void thief(player *player){
         cout << " - Dad! Mom! That's my parents! Please help them, mister!\n";
         cin.get();
         struct monster orc;
-        orc.level = 6;
+        orc.strength = 6;
         orc.luck = 4;
         orc.HP = 90;
         cout << "press 1 to see the orc's characteristics\n";
@@ -94,7 +98,7 @@ void thief(player *player){
             cin >> answer;
         }
         if(answer == "1"){
-            cout << "   orc level: " << orc.level << "\n";
+            cout << "   orc strength: " << orc.strength << "\n";
             cout << "   orc luck: " << orc.luck << "\n";
             cout << "   orc HP: " << orc.HP << "\n";
             cin.get();
@@ -130,20 +134,27 @@ void thief(player *player){
         cin.get();
         cout << "**After the little boy leave, you pack your stuff and prepare to hit the road.\nSuddenly, you head some movements in a bush not from you**\n";
         cin.get();
-        monster();
+        if (rand()%10 > player->luck){monster()};
         cin.get();
+        if (rand()%10 > player->luck){monster()};
         cout << "**When you're going deeper and deeper into the forest, it's become more difficult to tell the direction.**\n";
         cin.get();
         cout << "**Even though you've been following the trail, you start to wonder whether you're still on the right track because something seems off**\n";
         monster();
         cout << "**Not knowing the correct direction while keeping bumping into monsters, you panic and wander away from the trail**\n";
         cin.get();
-        impossible_monster();
+        cout << "**All of a sudden, you foodstep behind of you**\n";
         cin.get();
-        cout << "**When you're severely wounded by monsters, the little boy appears in front of you**\n";
+        cout << "**You slowly turn around and desperately find that dozens of orcs are charging to you**\n";
+        cin.get();
+        cout << "**You know that there is no way you can run away from them, so you choose to fight for your seemingly last stand**\n";
+        cin.get();        
+        cout << "**When you're severely wounded by orcs, the little boy appears in front of you**\n";
         cin.get();
         cout << "**It turns out that the little boy keeps on luring monsters to come to you and attack you along the way here**\n";
         cin.get();
-        cout << "**He wants his revenge on you, and you're going to die soon**\n";
+        cout << "**Knowing that he is about the starve to death, the little boy doesn't care if he would be attacked by orcs**\n";
+        cin.get();
+        cout << "**He only wants his revenge on you, and you're going to die with him soon**\n";
     }
 }   
