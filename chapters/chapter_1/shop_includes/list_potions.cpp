@@ -1,7 +1,7 @@
 #include <iostream>
 #include <iomanip>
 using namespace std;
-void list_potions(player *player){
+void list_potions(attribute *player){
     cout << "MY POTIONS\n";
     cout << setw(2) << "#" << setw(10) << "NAME" << setw(5) << "POWER" << endl;
     for(int i = 0; i < player->my_potions.size(); i++){

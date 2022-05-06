@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-void list_weapons(player *player){
+void list_weapons(attribute *player){
     cout << "YOUR WEAPONS\n";
     cout << setw(2) << "#" << setw(25) << "NAME" << setw(5) << "POWER" << endl;
     for(int i = 0; i < player->my_weapons.size(); i++){
