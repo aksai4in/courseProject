@@ -3,8 +3,8 @@
 #include "farmer_includes/goblins.cpp"
 #include "farmer_includes/reported.cpp"
 using namespace std;
-void farmer(string name){
-    cout << " - Hey, stranger, I heard that your name is " << name << ", right? What a weird name! (farmer)\n";
+void farmer(player *player){
+    cout << " - Hey, stranger, I heard that your name is " << player->name << ", right? What a weird name! (farmer)\n";
     cin.get();
     cout << " - Anyway, since you decided to stay in the village, would you like to help me with some tasks? (farmer)\n";
     cin.get();
@@ -95,7 +95,13 @@ void farmer(string name){
             }
         }
     }
-    cout << " - Hey, " << name << ", I am glad you made it back! (farmer)\n";
+    cout << " - Hey, " << player->name << ", I am glad you made it back! (farmer)\n";
+    cin.get();
+    cout << " - Here is your reward. (farmer)\n";
+    cin.get();
+    cout << "***You have received 20 gold coins***";
+    player->money += 20;
+    cout << "Your money > " << player->money << "\n";
     cin.get();
     cout << " - Oh haven't the hunter told you about the dragon yet? (farmer)\n";
     cin.get();

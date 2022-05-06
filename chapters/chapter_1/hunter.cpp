@@ -3,7 +3,7 @@
 #include "hunter_includes/rabbits.cpp"
 #include "hunter_includes/goes_to_forest.cpp"
 using namespace std;
-void hunter(string name){
+void hunter(player *player){
     cout << "Hey, buddy! glad to see that you're doing much better now. (Burnson)\n";
     cin.get();
     cout << "You were in pretty poor shape when I first saw you in the forest. (Burnson)\n";
@@ -107,6 +107,10 @@ void hunter(string name){
         }
 
     }
+    cout << "***You have received 20 gold coins***\n";
+    player->money += 20;
+    cout << "Your money > " << player->money << "\n";
+    cin.get();
     cout << " - Hey, Burnson, why are there so few animals in the forest?\n";
     cin.get();
     cout << " - Oh haven't the I told you about the dragon yet? (Burnson)\n";
