@@ -1,7 +1,7 @@
 #include <iostream>
 #include <time.h>
 #include <stdlib.h>
-#include "monster_struct.cpp"
+//#include "monster_struct.cpp"
 using namespace std;
 void rand_monster(monster_attribute *monster){
     srand(time(0));
