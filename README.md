@@ -6,7 +6,7 @@ This is the project for course COMP2113_ENGG1340.
 
 **Game Idea**
 
-We would like to develop a single-player role-playing game in which the player will be the adventurer with the final goal of defeating the dragon. There are several roles available for the player to choose from and each of them comes with different strengths and weaknesses. For example, a warrior has more health points and high damage points yet rarely triggers critical strikes. Along the journey, depending on the player’s actions, a series of random events will happen and the player will encounter villagers, knights, monsters, etc. The player can choose to interact with them. Different actions will in turn affect the development of the following story. After defeating enemies, the player will obtain ability points that can be used to upgrade the strengths. The mission of the player is to collect as many points as possible along the journey and figure out the way leading to the dragon to defeat it. There are several endings. Depending on the player’s actions, the journey will lead to different endings.
+We would like to develop a single-player role-playing game in which the player will be the adventurer with the final goal of defeating the dragon. There are several roles available for the player to choose from and each of them comes with different strengths and weaknesses. For example, a warrior has more strength points yet has low luck and intelligence. Along the journey, depending on the player’s actions, a series of random events will happen and the player will encounter villagers, knights, monsters, etc. Different actions will in turn affect the development of the following story. After defeating enemies, the player will obtain experience points that can be used to upgrade his charesteristics. Player can also go to the shop to buy weapons and potions. He can then choose a weapon to use. The mission of the player is to collect as many points as possible along the journey and figure out the way leading to the dragon to defeat it. There are several endings. Depending on the player’s actions, the journey will lead to different endings.
 
 **Game Features**
 
@@ -26,13 +26,11 @@ Random story development depending on the player's actions
 
 Saving game/ Loading from the previous game
   - File input/output (e.g., for loading/saving game status):
-    The player can choose to save the game and load the game to continue the previous gameplay. When facing a tough decision to be made in the story, the player can
-    also choose to save the game before making the decision and load the game and make the decision again if the previous choice doesn’t lead to a good ending.
-(Player's attrubute, story progress, etc.)
+    The player can choose to save the game and load the game to continue the previous gameplay. (Player's attrubute, story progress, etc.)
 
-Ability point system for the player to upgrade the strengths
+Experience point and money systems for the player to upgrade the strengths and buy items
   - Data structures for storing game status:
-    Built upon the initial strengths and weaknesses, the player can obtain ability points along the journey and distribute them to upgrade the strengths
+    Built upon the initial strengths and weaknesses, the player can obtain ability points along the journey and distribute them to upgrade the strengths. He can also make money by completeing missions and buy items in the shop.
 
 Different characters to interact with the player
   - Program codes in multiple files:
