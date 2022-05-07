@@ -1,6 +1,7 @@
 #include <iostream>
 #include "continue_missions_includes/upgrade.cpp"
 using namespace std;
+// function for if a player wants to continue taking village missions after chapter 1
 void continue_missions(attribute *player){
     cout << "***Would you like to continue going on village missions?***\n";
     cout << "press 1 for: yes, I will take mor missions\n";

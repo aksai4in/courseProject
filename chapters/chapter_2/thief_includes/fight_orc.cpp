@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+// function to fight the orc
 void fight_orc(attribute *player){
     cout << "you defeated the orc\n";
     cin.get();

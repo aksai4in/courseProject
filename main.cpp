@@ -122,7 +122,19 @@ int main(){
         else if(first_story_line == 1){
             hunter(player);
         }
-        shop(player);
+        cout << "Would you like to visit the village shop?\n";
+        cout << "press 1 for yes\n";
+        cout << "press 2 for no\n";
+        cout << "Your choice > ";
+        cin >> answer;
+        while(answer != "1" && answer != "2"){
+            cout << "***unknown choice, please try again***\n";
+            cout << "Your choice > ";
+            cin >> answer;
+        }
+        if(answer == "1"){
+            shop(player);
+        }
         continue_missions(player);
         cout << "Would you like to save the game?\n";
         cout << "press 1 for yes\n";

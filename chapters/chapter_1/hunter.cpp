@@ -3,6 +3,7 @@
 #include "hunter_includes/rabbits.cpp"
 #include "hunter_includes/goes_to_forest.cpp"
 using namespace std;
+//function for a hunter storyline in chapter 1
 void hunter(attribute *player){
     cout << "Hey, buddy! glad to see that you're doing much better now. (Burnson)\n";
     cin.get();

@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 using namespace std;
+// saves the game progress aftger 1 and 2 chapter
 void save(attribute *player, int chapter){
     if(chapter == 1){
         ofstream fout;

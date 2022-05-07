@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+// function for if a player chooses to abandon boy's parents
 void run_away_orc(){
     cout << " - No, we gotta go! (you)\n";
     cin.get();

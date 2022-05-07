@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+// function that lets a player to upgrade one of his characteristics with experience points
 void upgrade(attribute *player){
     cout << "***Which charecteristic would you like to improve?***\n";
     cout << "press 1 for stength\n";

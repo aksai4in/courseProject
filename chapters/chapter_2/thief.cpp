@@ -4,6 +4,7 @@
 #include "thief_includes/run_away_orc.cpp"
 
 using namespace std;
+// main function for chapter 2
 void thief(attribute *player){
     srand(time(0));
     cout << "*********************************************************************************************\n";

@@ -3,7 +3,7 @@
 //#include "monster_includes/fight_monster.cpp"
 #include "monster_includes/run_away_monster.cpp"
 using namespace std;
-
+// function for a situation when player meets a monster during the game
 void monster_encounter(attribute *player){
     monster_attribute *ptr_monster;
     ptr_monster = new monster_attribute;
