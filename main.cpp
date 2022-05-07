@@ -191,9 +191,10 @@ int main(){
             int wsize, psize;
             getline(fin, player->name);
             fin >> player->role >> player->HP >> player->strength >> player->intelligence >> player->luck >> player->experience_points >> player->money >> wsize;
+            string weapon_name;
+            fin.get();
             for(int i = 0; i < wsize; i++){
-                string name;
-                getline(fin, name);
+                getline(fin, weapon_name);
                 for(int j = 0; j < 10; j++){
                     if(weapons[j].name == name){
                         player->my_weapons.push_back(weapons[j]);
@@ -201,6 +202,7 @@ int main(){
                 }
             }
             fin >> psize;
+            fin.get();
             for(int i = 0; i < psize; i++){
                 string name;
                 getline(fin, name);
@@ -212,7 +214,6 @@ int main(){
             }
 
             fin.close();
-            
             thief(player, storyline_choice);
             cout << "Would you like to save the game?\n";
             cout << "press 1 for yes\n";
@@ -241,6 +242,7 @@ int main(){
             int wsize, psize;
             getline(fin, player->name);
             fin >> player->role >> player->HP >> player->strength >> player->intelligence >> player->luck >> player->experience_points >> player->money >> wsize;
+            fin.get();
             for(int i = 0; i < wsize; i++){
                 string name;
                 getline(fin, name);
@@ -251,6 +253,7 @@ int main(){
                 }
             }
             fin >> psize;
+            fin.get();
             for(int i = 0; i < psize; i++){
                 string name;
                 getline(fin, name);
@@ -261,7 +264,13 @@ int main(){
                 }
             }
             fin.close();
-            
+            if(rand()%2 == 0){
+                knight(storyline_choice, player);
+            }
+
+            else{
+                no_knight(storyline_choice, player);
+            } 
         }
     }
 }

@@ -174,5 +174,9 @@ void thief(attribute *player, int &storyline_choice){
         cout << "***Knowing that he is about to starve to death, the little boy doesn't care if he would be attacked by orcs, too***\n";
         cin.get();
         cout << "***He only wants his revenge on you, and you're going to die with him soon***\n";
+        cin.get();
+        cout << "***GAME OVER***\n";
+        delete player;
+        exit(0);
     }
 }   
