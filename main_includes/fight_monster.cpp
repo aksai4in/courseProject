@@ -63,12 +63,12 @@ void fight_monster(monster_attribute *monster, attribute *player){
             cout << "***" << monster->name << " attacks you!***\n";
 
             player->HP = player->HP - monster->strength;
-            cout << "*** " << monster->name <<  " make " << player_damage << " damage.***\n";
+            cout << "*** " << monster->name <<  " make " << monster->strength << " damage.***\n";
 
             if (rand()%10 < monster->luck){
                 cout <<"\n***Monster delivers extra damage!***\n";
                 player->HP = player->HP - monster->strength*0.5;
-                cout << "*** " << monster->name <<  " make " << player_damage*0.5 << " damage.***\n";
+                cout << "*** " << monster->name <<  " make " << monster->strength*0.5 << " damage.***\n";
             }
 
             if (player->HP <= 0){
