@@ -1,2 +1,2 @@
-assign_char.o: assign_char.cpp structs.cpp
-	g++ -c assign_char.cpp
+main: assign_char.cpp continue_mission.cpp deer.cpp farmer.cpp fight_monster.cpp fight_orc.cpp goblins.cpp goes_to_forest.cpp hunter.cpp knight.cpp list_potions_shop.cpp list_potions.cpp list_weapons_shop.cpp list_potions.cpp monster_struct.cpp monster.cpp no_knight.cpp rabbits.cpp rand_monster.cpp reported.cpp run_away_monster.cpp run_away_orc.cpp save.cpp shop.cpp slimes.cpp structs.cpp thief.cpp upgrade.cpp
+    g++ -pedantic-errors -std=c++11 main.cpp -o main
