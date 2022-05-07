@@ -93,8 +93,9 @@ void fight_monster(monster_attribute *monster, attribute *player){
                 cin >> answer;
             }
         
+            player_damage = player_damage*(player->my_weapons[stoi(answer)].power/player->current_weapon.power);
             player->current_weapon = player->my_weapons[stoi(answer)];
-            cout << "***You equip " << player->current_weapon.name << ".***\n";
+            cout << "***You equip " << player->current_weapon.name << ".***\n";        
         }
 
         else if (answer == "3"){
