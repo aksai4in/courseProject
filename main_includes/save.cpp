@@ -10,13 +10,13 @@ void save(attribute *player, int chapter){
             cout << "Error in saving the game" << endl;
             exit(1);
         }
-        fout << player->name << " " << player->role << " " << player->HP << " " << player->strength << " " << player->intelligence << " " << player->luck << " " << player->experience_points << " " << player->money << " " << player->my_weapons.size();
+        fout << player->name << "\n" << player->role << " " << player->HP << " " << player->strength << " " << player->intelligence << " " << player->luck << " " << player->experience_points << " " << player->money << " " << player->my_weapons.size() << endl;
         for(int i = 0; i < player->my_weapons.size(); i++){
-            fout << " " << player->my_weapons[i].name;
+            fout  << player->my_weapons[i].name << endl;
         }
-        fout << " " << player->my_potions.size();
+        fout << player->my_potions.size() << endl;
         for(int i = 0; i < player->my_potions.size(); i++){
-            fout << " " << player->my_potions[i].name;
+            fout << player->my_potions[i].name << endl;
         }
         fout.close();
     }
@@ -27,13 +27,13 @@ void save(attribute *player, int chapter){
             cout << "Error in saving the game" << endl;
             exit(1);
         }
-        fout << player->name << " " << player->role << " " << player->HP << " " << player->strength << " " << player->intelligence << " " << player->luck << " " << player->experience_points << " " << player->money << " " << player->my_weapons.size();
+        fout << player->name << "\n" << player->role << " " << player->HP << " " << player->strength << " " << player->intelligence << " " << player->luck << " " << player->experience_points << " " << player->money << " " << player->my_weapons.size() << endl;
         for(int i = 0; i < player->my_weapons.size(); i++){
-            fout << " " << player->my_weapons[i].name;
+            fout << player->my_weapons[i].name << endl;
         }
-        fout << " " << player->my_potions.size();
+        fout << player->my_potions.size() << endl;
         for(int i = 0; i < player->my_potions.size(); i++){
-            fout << " " << player->my_potions[i].name;
+            fout << player->my_potions[i].name << endl;
         }
         fout.close();
     }

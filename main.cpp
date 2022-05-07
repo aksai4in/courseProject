@@ -68,6 +68,10 @@ int main(){
         }
         cout << "Plese input your name > ";
         getline(cin, name);
+        while(name == "" || name.find_first_not_of(' ') == string::npos){
+            cout << "Plese input your name > ";
+            getline(cin, name);
+        }
         player->name = name;
         cout << " - " << name << ", huh. I am Burnson. (hunter)\n";
         cin.get();
@@ -185,10 +189,11 @@ int main(){
                 exit(1);
             }
             int wsize, psize;
-            fin >> player->name >> player->role >> player->HP >> player->strength >> player->intelligence >> player->luck >> player->experience_points >> player->money >> wsize;
+            getline(fin, player->name);
+            fin >> player->role >> player->HP >> player->strength >> player->intelligence >> player->luck >> player->experience_points >> player->money >> wsize;
             for(int i = 0; i < wsize; i++){
                 string name;
-                fin >> name;
+                getline(fin, name);
                 for(int j = 0; j < 10; j++){
                     if(weapons[j].name == name){
                         player->my_weapons.push_back(weapons[j]);
@@ -198,7 +203,7 @@ int main(){
             fin >> psize;
             for(int i = 0; i < psize; i++){
                 string name;
-                fin >> name;
+                getline(fin, name);
                 for(int j = 0; j < 3; j++){
                     if(potions[j].name == name){
                         player->my_potions.push_back(potions[j]);
@@ -234,10 +239,11 @@ int main(){
 
         else{
             int wsize, psize;
-            fin >> player->name >> player->role >> player->HP >> player->strength >> player->intelligence >> player->luck >> player->experience_points >> player->money >> wsize;
+            getline(fin, player->name);
+            fin >> player->role >> player->HP >> player->strength >> player->intelligence >> player->luck >> player->experience_points >> player->money >> wsize;
             for(int i = 0; i < wsize; i++){
                 string name;
-                fin >> name;
+                getline(fin, name);
                 for(int j = 0; j < 10; j++){
                     if(weapons[j].name == name){
                         player->my_weapons.push_back(weapons[j]);
@@ -247,7 +253,7 @@ int main(){
             fin >> psize;
             for(int i = 0; i < psize; i++){
                 string name;
-                fin >> name;
+                getline(fin, name);
                 for(int j = 0; j < 3; j++){
                     if(potions[j].name == name){
                         player->my_potions.push_back(potions[j]);
