@@ -6,7 +6,7 @@ using namespace std;
 void fight_monster(monster_attribute *monster, attribute *player){
     srand(time(0));
     string answer;
-    int player_damage;
+    double player_damage;
     if (player->role == "Warrior"){
         cout << "***You draw your sword out and prepare to fight " << monster->name << ".***\n";
         player_damage = player->strength*player->current_weapon.power;
