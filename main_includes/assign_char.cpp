@@ -1,6 +1,7 @@
 #include <iostream>
 #include "structs.cpp"
 using namespace std;
+// assigns characteristics to the player depending on a player's choice
 void assign_char(string type, attribute *player){
     if(type == "1"){
         player->role = "Warrior";

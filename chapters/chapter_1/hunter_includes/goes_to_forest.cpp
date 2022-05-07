@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+//function for if a player chooses to abandon hunter without any missions
 void goes_to_forest(){
     cout << " - Well, I tried warning you. |sighs| (Burnson)\n";
     cin.get();

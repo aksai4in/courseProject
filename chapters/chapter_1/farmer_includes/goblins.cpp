@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+//function for going on a mission with goblins
 void goblins(){
     cout << "Farmer tells you where he last saw goblins.\n";
     cin.get();

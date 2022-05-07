@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+// function if a player gets reported in the farmer storyline
 void reported(){
     cout << "After you leave the farmer, he reports you to the head of the village.\n";
     cin.get();

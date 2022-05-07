@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+// function for going on a mission with rabbits
 void rabbits(){
     cout << "After leaving the village, you head to the forest to hunt rabbits\n";
     cin.get();
