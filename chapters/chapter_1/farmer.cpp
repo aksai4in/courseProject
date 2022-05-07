@@ -112,7 +112,7 @@ void farmer(attribute *player){
     cin.get();
     cout << " - Here is your reward. (farmer)\n";
     cin.get();
-    cout << "***You have received 20 gold coins***";
+    cout << "***You have received 20 gold coins***\n";
     player->money += 20;
     cout << "Your money > " << player->money << "\n";
     cin.get();

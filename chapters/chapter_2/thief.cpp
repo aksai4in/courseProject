@@ -10,7 +10,7 @@ void thief(attribute *player, int &storyline_choice){
     cout << "*********************************************************************************************\n\n";
     cout << "***After leaving the village, you travel alone toward the cave of the dragon deep in the forest***\n";
     cin.get();
-    cout << "***It's getting drak, and you decide to take some rest***\n";
+    cout << "***It's getting dark, and you decide to take some rest***\n";
     cin.get();
     cout << "***You wake up because of some noise***\n";
     cin.get();
