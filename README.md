@@ -6,8 +6,11 @@ This is the project for course COMP2113_ENGG1340.
 
 **Compilation and execution instructions:**
 
-In order to start the game run the main.cpp
+In order to start the game please compile the main.cpp and run the executable.
 
+**Background and Settings**
+
+You reincarnated into a different world which highly similar to the medieval times. Not knowing what to do, you encounter a hunter in the forest. You understand the society of this world through talking to the hunter and decide to become an adventurer. However, while you adventure is just about to unfold, you hear about a dragon living deep in the forrest and the mystery about the dragon kingdom's knights trying to hide from the public. In order to protect the village that once saved you and uncover the truth behind the  mystery, you go on the adventure to the cave of the dragon.
 
 **Game Idea**
 
