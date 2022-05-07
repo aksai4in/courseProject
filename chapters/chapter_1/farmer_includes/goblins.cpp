@@ -1,6 +1,17 @@
 #include <iostream>
 using namespace std;
-void goblins(){
+void goblins(attribute *player){
+
+    monster_attribute *ptr_goblin;
+    ptr_goblin = new monster_attribute;
+    ptr_goblin->name = "Goblin";
+    ptr_goblin->HP = 5;
+    ptr_goblin->luck = 1;
+    ptr_goblin->strength = 10; 
+
+    fight_monster(ptr_goblin, player);
+    delete ptr_goblin;
+    
     cout << "Farmer tells you where he last saw goblins.\n";
     cin.get();
     cout << "You head toward there immediately.\n";

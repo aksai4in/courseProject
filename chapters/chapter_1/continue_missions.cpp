@@ -27,16 +27,16 @@ void continue_missions(attribute *player){
             cin >> answer;
         }
         if(answer == "1"){
-            slimes();
+            slimes(player);
         }
         else if(answer == "2"){
-            goblins();
+            goblins(player);
         }
         else if(answer == "3"){
-            deer();
+            deer(player);
         }
         else if(answer == "4"){
-            rabbits();
+            rabbits(player);
         }
         cout << "***You received 20 gold coins***";
         player->money += 20;

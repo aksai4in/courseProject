@@ -31,7 +31,7 @@ void hunter(attribute *player){
         cin.get();
         cout << " - I would suggest you go the north side of the ...\n";
         cin.get();
-        deer();
+        deer(player);
     }
     else if(answer == "2"){
         cout << " - HA-HA! Of course, what was I thinking? It's probably too early for you to hunt deer. (Burnson)\n";
@@ -54,7 +54,7 @@ void hunter(attribute *player){
             cin.get();
             cout << " - I would suggest you go the East side of the ...\n";
             cin.get();
-            rabbits();
+            rabbits(player);
         }
         else if(answer == "2"){
             cout << " - Deer are pretty difficult to find these days. So I don't expect much from you.\n";
@@ -63,7 +63,7 @@ void hunter(attribute *player){
             cin.get();
             cout << " - I would suggest you go the north side of the ...\n";
             cin.get();
-            deer();
+            deer(player);
         }
         else if(answer == "3"){
             cout << " - You're a lazy one aren't you? HA - HA - HA.\n";
@@ -94,7 +94,7 @@ void hunter(attribute *player){
                 cin.get();
                 cout << " - I would suggest you go the north side of the ...\n";
                 cin.get();
-                deer();
+                deer(player);
             }
             else if(answer == "2"){
                 cout << " - Rabbits are easier to find than deer.\n";
@@ -103,7 +103,7 @@ void hunter(attribute *player){
                 cin.get();
                 cout << " - I would suggest you go the East side of the ...\n";
                 cin.get();
-                rabbits();
+                rabbits(player);
             }
             else if(answer == "3"){
                 cout << " - Sure, you can always leave the village. But I wouldn't suggest you do that now.\n";
@@ -131,7 +131,7 @@ void hunter(attribute *player){
                     cin.get();
                     cout << " - I would suggest you go the East side of the ...\n";
                     cin.get();
-                    rabbits();
+                    rabbits(player);
                 }
                 else if(answer == "2"){
                     cout << " - Deer are pretty difficult to find these days. So I don't expect much from you.\n";
@@ -140,10 +140,10 @@ void hunter(attribute *player){
                     cin.get();
                     cout << " - I would suggest you go the north side of the ...\n";
                     cin.get();
-                    deer();
+                    deer(player);
                 }
                 else if(answer == "3"){
-                    goes_to_forest();
+                    goes_to_forest(player);
                 }
             }
         }

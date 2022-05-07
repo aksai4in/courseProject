@@ -15,6 +15,8 @@
 #include "chapters/chapter_1/shop.cpp"
 #include "chapters/chapter_1/continue_missions.cpp"
 #include "chapters/chapter_2/thief.cpp"
+#include "chapters/chapter_3/knight.cpp"
+#include "chapters/chapter_3/no_knight.cpp"
 using namespace std;
 
 int main(){
@@ -197,6 +199,7 @@ int main(){
                 save(player, 2);
             }
         }
+
         else{
             int wsize, psize;
             fin >> player->name >> player->role >> player->HP >> player->strength >> player->intelligence >> player->luck >> player->experience_points >> player->money >> wsize;

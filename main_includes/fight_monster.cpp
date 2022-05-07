@@ -72,9 +72,13 @@ void fight_monster(monster_attribute *monster, attribute *player){
             }
 
             if (player->HP <= 0){
-                cout << "***You are killed by the monster!***\n\n";
-                cin.get();   
-                break;
+                cout << "***You are killed by the monster!***\n";
+                cin.get();
+                cout << "GAME OVER\n\n";
+                cout << "***To retry, please restart the game and load your saved progress.***";
+                delete monster;
+                delete player;
+                exit(0);
             }
         }
 

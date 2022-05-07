@@ -22,7 +22,7 @@ void farmer(attribute *player){
         cin >> answer;
     }
     if(answer == "1"){
-        goblins();
+        goblins(player);
         cout << "Finally, you return to the farmer to ask why there are now more and more monsters showing up around the village";
         cin.get();
     }
@@ -43,12 +43,12 @@ void farmer(attribute *player){
             cin >> answer;
         }
         if(answer == "1"){
-            slimes();
+            slimes(player);
             cout << "You return to the farmer to ask about monsters\n";
             cin.get();
         }
         else if(answer == "2"){
-            goblins();
+            goblins(player);
             cout << "Finally, you return to the farmer to ask why there are now more and more monsters showing up around the village";
             cin.get();
         }
@@ -70,7 +70,7 @@ void farmer(attribute *player){
                 cin >> answer;
             }
             if(answer == "1"){
-                slimes();
+                slimes(player);
                 cout << "You return to the farmer to ask about monsters\n";
                 cin.get();
             }
@@ -89,21 +89,21 @@ void farmer(attribute *player){
                     cin >> answer;
                 }
                 if(answer == "1"){
-                    goblins();
+                    goblins(player);
                     cout << "Finally, you return to the farmer to ask why there are now more and more monsters showing up around the village";
                     cin.get();
                 }
                 else if(answer == "2"){
-                    slimes();
+                    slimes(player);
                     cout << "You return to the farmer to ask about monsters\n";
                     cin.get();
                 }
                 else if(answer == "3"){
-                    reported();
+                    reported(player);
                 }
             }
             else if(answer == "3"){
-                reported();
+                reported(player);
             }
         }
     }

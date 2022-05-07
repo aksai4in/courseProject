@@ -86,6 +86,7 @@ void thief(attribute *player){
         cin.get();
         monster_attribute *ptr_orc;
         ptr_orc = new monster_attribute;
+        ptr_orc->name = "Orc";
         ptr_orc->strength = 6;
         ptr_orc->luck = 4;
         ptr_orc->HP = 90;
