@@ -7,11 +7,15 @@ using namespace std;
 
 void no_knight(int storyline_choice, attribute *player){
     cin.get();
-    cout << "**You continue your trip with the little boy. Along the way you almost get lost many times, but, fortunately, the little boy is familiar with the area, and he helps you point out the right direction. After a long trip, the player arrives at the frontier of the battle between the knights and the dragon**\n";
+    cout << "***You continue your trip with the little boy. Along the way you almost get lost many times, but, fortunately, the little boy is familiar with the area, and he helps you point out the right direction***\n";
     cin.get();
-    cout << "**When you and the little boy is getting closer to the cave, you see the campsite of the kingdom knights.It seems that they're gearing up and preparing to go into the cave**\n";
+    cout << "***After a long trip, the player arrives at the frontier of the battle between the knights and the dragon***\n";
     cin.get();
-    cout <<"**Feeling that the knights might be hiding something about the dragon, you decide to sneak into the cave to find the dragon to talk to it to find out the truth**\n";
+    cout << "***When you and the little boy is getting closer to the cave, you see the campsite of the kingdom knights***\n";
+    cin.get();
+    cout << "***It seems that they're gearing up and preparing to go into the cave***\n";
+    cin.get();
+    cout <<"***Feeling that the knights might be hiding something about the dragon, you decide to sneak into the cave to find the dragon to talk to it to find out the truth***\n";
     cin.get();
     
     if (rand()%10 > player->luck){
@@ -19,7 +23,13 @@ void no_knight(int storyline_choice, attribute *player){
         monster_encounter(player);
     }
 
-    cout << "**Getting deeper and deeper, you finally see the dragon.\nIt seems to be asleep.\nIt looks innocent and different from what the knights described as evil and cruel.\nIt almost looks like a kid taking a nap.**\n";
+    cout << "***Getting deeper and deeper, you finally see the dragon***\n";
+    cin.get();
+    cout << "***It seems to be asleep***\n";
+    cin.get();
+    cout << "***It looks innocent and different from what the knights described as evil and cruel***\n";
+    cin.ger();
+    cout << "***It almost looks like a kid taking a nap***\n";
     cin.get();
     if(storyline_choice == 0){
         cout << "***You and Birger hold the breath and get closer to the dragon***\n";
