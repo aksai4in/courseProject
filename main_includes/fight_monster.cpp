@@ -28,7 +28,7 @@ void fight_monster(monster_attribute *monster, attribute *player){
         cout << "***Your HP now is " << player->HP << ".***\n\n";
         cout << "***" << monster->name << " HP now is " << monster->HP << ".***\n\n";
         cout << "***What do you want to do?***\n";
-        cout << "   press 1 to choose attack\n";
+        cout << "   press 1 to attack\n";
         cout << "   press 2 to switch your weapon\n";
         cout << "   press 3 to drink potion\n";
         cin >> answer;
