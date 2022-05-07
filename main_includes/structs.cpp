@@ -27,7 +27,7 @@ struct attribute{
     vector<weapon> my_weapons;
     vector<potion> my_potions;
 };
-struct weapon weapons[10] = {{"Wooden sword", 1.05, 15}, {"Steel sword", 1.1, 22}, {"Triple scythe", 1.2, 35}, {"Legendary sword Honshu", 1.4, 50}, {"Wooden bow", 1.05, 15}, {"Elf bow", 1.1, 22}, {"crossbow", 1.2, 35}, {"Regular staff", 1.05, 15}, {"Crystal staff", 1.2, 35}, {"Magic wand", 1.3, 45}};
+struct weapon weapons[10] = {{"Wooden Sword", 1.05, 15}, {"Steel Sword", 1.1, 22}, {"Triple Scythe", 1.2, 35}, {"Legendary Sword Honshu", 1.4, 50}, {"Wooden Bow", 1.05, 15}, {"Elf Bow", 1.1, 22}, {"Crossbow", 1.2, 35}, {"Regular Staff", 1.05, 15}, {"Crystal Staff", 1.2, 35}, {"Magic Wand", 1.3, 45}};
 // adds weapon into the weapon list of the player
 void add_weapon(attribute *player, int type){
     player->my_weapons.push_back(weapons[type]);
