@@ -101,14 +101,14 @@ void fight_monster(monster_attribute *monster, attribute *player){
             list_potions(player);
             cout << "***Which potion would you like to use? Please input its number (Input -1 to exit).***\n";
             cin >> -1;
-
-            while(stoi(answer) < -1 || stoi(answer) >= player->my_potions.size()){
-                cout << "***unkonwn choice, please try again***\n";
-                cout << "Your choice > ";
-                cin >> answer;
-            }
             
             if (answer != "-1"){
+                while(stoi(answer) < 0 || stoi(answer) >= player->my_potions.size()){
+                    cout << "***unkonwn choice, please try again***\n";
+                    cout << "Your choice > ";
+                    cin >> answer;
+                }        
+
                 player->HP = player->HP + player->my_potions[stoi(answer)].power;
 
                 cout << "***You drink the " << player->my_potions[stoi(answer)].name << " potion.***\n";
