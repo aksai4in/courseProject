@@ -7,20 +7,22 @@ using namespace std;
 // main function for chapter 2
 void thief(attribute *player, int &storyline_choice){
     srand(time(0));
-    cout << "*********************************************************************************************\n";
-    cout << "***After leaving the village, you travel alone toward the cave of the dragon deep in the forest.***\n";
+    cout << "*********************************************************************************************\n\n";
+    cout << "***After leaving the village, you travel alone toward the cave of the dragon deep in the forest***\n";
     cin.get();
-    cout << "***It's getting drak, and you decide to take some rest.***\n";
+    cout << "***It's getting drak, and you decide to take some rest***\n";
     cin.get();
-    cout << "You wake up because of some noise.\n";
+    cout << "***You wake up because of some noise***\n";
     cin.get();
-    cout << "You look around and see a boy trying to open you backpack\n";
+    cout << "***You look around and see a boy trying to open you backpack****\n";
     cin.get();
     cout << " - Hey! What are you doing (you)\n";
     cin.get();
     cout << " - Ah! I'm sorry, mister! I don't mean to... I have no choice! I'm sorry!\n";
     cin.get();
-    cout << "***The little boy grabs your backpack and wants to get away.\n But you grab his foot before he has a chance to run away.***\n";
+    cout << "***The little boy grabs your backpack and wants to get away***\n";
+    cin.get();
+    cout << "***But you grab his foot before he has a chance to run away***\n";
     cin.get();
     cout << " - Please forgive me, good mister! I'm starving!\n";
     cin.get();
@@ -43,7 +45,9 @@ void thief(attribute *player, int &storyline_choice){
         cin >> answer;
     }
     if(answer == "1"){
-        cout << "***Feeling sorry for the little boy, you hand over few slices of bread to him.\n He shovels all of them into his mouth and munches on them. He barely chews before he swallows them.***\n";
+        cout << "***Feeling sorry for the little boy, you hand over few slices of bread to him***\n";
+        cin.get();
+        cout << "***He shovels all of them into his mouth and munches on them. He barely chews before he swallows them***\n";
         cin.get();
         cout << " - So what's your plan? Are you going to look for your parents? (you)\n";
         cin.get();
@@ -55,9 +59,15 @@ void thief(attribute *player, int &storyline_choice){
         cin.get();
         cout << "***The little boy told you the village is not far away.\n You two hit the road at dawn***\n";
         cin.get(); 
-        if (rand()%10 > player->luck){monster_encounter(player);};
+        if (rand()%10 > player->luck){
+            cout << "***As you make your way in the forest, you come here some strange noise in the vicinity***\n";
+            monster_encounter(player);
+        }
         cin.get();
-        if (rand()%10 > player->luck){monster_encounter(player);};
+        if (rand()%10 > player->luck){
+            cout << "***As you make your way in the forest, you come here some strange noise in the vicinity***\n";
+            monster_encounter(player);
+        }
         cin.get();
         cout << " - It's so quiet. Where are all the animals? I cannot see any of them. What happened? (boy)\n";
         cin.get();
@@ -67,7 +77,9 @@ void thief(attribute *player, int &storyline_choice){
         cin.get();
         cout << " - I'm trying to get closer to the cave where dragon lives to see if there is anyway to solve the problem, but let's just focus on your village first. (you)\n";
         cin.get();
-        cout << "***You two finally arrive at the village, but you see no sign of boy's parents in the nearby forest.\n You decided to sneak into the village***\n";
+        cout << "***You two finally arrive at the village, but you see no sign of boy's parents in the nearby forest***\n";
+        cin.get();
+        cout << "***You decided to sneak into the village***\n";
         cin.get();
         cout << "***While you're approaching the little boy's house following his lead, you hear something***\n";
         cin.get();
@@ -81,20 +93,22 @@ void thief(attribute *player, int &storyline_choice){
         cin.get();
         cout << " - I... I'm gonna... kill you! Don't touch her! (Man)\n";
         cin.get();
-        cout << "***You see seriously wounded man and woman fighting an Orc in front of the little boy's house\n";
+        cout << "***You see seriously wounded man and woman fighting an Orc in front of the little boy's house***\n";
         cin.get();
         cout << " - Dad! Mom! That's my parents! Please help them, mister!\n";
         cin.get();
+
         monster_attribute *ptr_orc;
         ptr_orc = new monster_attribute;
         ptr_orc->name = "Orc";
         ptr_orc->strength = 6;
         ptr_orc->luck = 4;
-        ptr_orc->HP = 90;
+        ptr_orc->HP = 30;
         cout << "press 1 to see the orc's characteristics\n";
         cout << "press 2 to start a fight\n";
         cout << "press 3 to escape\n";
         cout << "Your choice > ";
+
         string answer;
         cin >> answer;
         while(answer != "1" && answer != "2" && answer != "3"){
@@ -139,26 +153,37 @@ void thief(attribute *player, int &storyline_choice){
         delete ptr_orc;
     }
     else if(answer == "2"){
-        cout << "Get out before it gets ungly\n";
+        cout << " - Get out before it gets ungly (you)\n";
         cin.get();
-        cout << " - I barely have enough food for myself. Go away before it gets ugly! (You)\n";
+        cout << " - I barely have enough food for myself. Go away before it gets ugly! (you)\n";
         cin.get();
         cout << " - Please! A little bit of bread would help! How can you be this cruel? (boy)\n";
         cin.get();
-        cout << " - Leave! It's my food! (You)\n";
+        cout << " - Leave! It's my food! (you)\n";
         cin.get();
         cout << " - You will regret this! (boy)\n";
         cin.get();
-        cout << "**After the little boy leave, you pack your stuff and prepare to hit the road.\nSuddenly, you hear some movements in a bush not from you**\n";
+        cout << "**After the little boy leave, you pack your stuff and prepare to hit the road***\n";
         cin.get();
-        if (rand()%10 > player->luck){monster_encounter(player);};
+        cout << "***Suddenly, you hear some movements in a bush not from you***\n";
         cin.get();
-        if (rand()%10 > player->luck){monster_encounter(player);};
+        if (rand()%10 > player->luck){
+            cout << "***As you make your way in the forest, you come here some strange noise in the vicinity***\n";
+            monster_encounter(player);
+        }
+        cin.get();
+        if (rand()%10 > player->luck){
+            cout << "***As you make your way in the forest, you come here some strange noise in the vicinity***\n";
+            monster_encounter(player);
+        }
         cout << "***When you're going deeper and deeper into the forest, it's become more difficult to tell the direction.***\n";
         cin.get();
         cout << "***Even though you've been following the trail, you start to wonder whether you're still on the right track because something seems off***\n";
         cin.get();    
-        if (rand()%10 > player->luck){monster_encounter(player);};
+        if (rand()%10 > player->luck){
+            cout << "***As you make your way in the forest, you come here some strange noise in the vicinity***\n";
+            monster_encounter(player);
+        }
         cout << "***Not knowing the correct direction while keeping bumping into monsters, you panic and wander away from the trail***\n";
         cin.get();
         cout << "***All of a sudden, you hear many foodsteps behind of you***\n";
@@ -175,7 +200,8 @@ void thief(attribute *player, int &storyline_choice){
         cin.get();
         cout << "***He only wants his revenge on you, and you're going to die with him soon***\n";
         cin.get();
-        cout << "***GAME OVER***\n";
+        cout << "GAME OVER\n\n";
+        cout << "***To retry, please restart the game and load your saved progress.***";
         delete player;
         exit(0);
     }

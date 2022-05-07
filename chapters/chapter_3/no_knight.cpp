@@ -8,7 +8,12 @@ void no_knight(int storyline_choice, attribute *player){
     cin.get();
     cout <<"**Feeling that the knights might be hiding something about the dragon, you decide to sneak into the cave to find the dragon to talk to it to find out the truth**\n";
     cin.get();
-    if (rand()%10 > player->luck){monster_encounter(player);};
+    
+    if (rand()%10 > player->luck){
+        cout << "***As you make your way in the cave, you come here some strange noise in the vicinity***\n";
+        monster_encounter(player);
+    }
+
     cout << "**Getting deeper and deeper, you finally see the dragon.\nIt seems to be asleep.\nIt looks innocent and different from what the knights described as evil and cruel.\nIt almost looks like a kid taking a nap.**\n";
     cin.get();
     if(storyline_choice == 0){
@@ -87,22 +92,14 @@ void no_knight(int storyline_choice, attribute *player){
             cin.get();
 
             if (rand()%10 > player->luck){
-                cout << "While you try your best to hide youself and sneak around the knights, you are still spotted.***\n";
-                cin.get();
-                cout << "Seeing you with the dragon, the knights draw their swords and charge toward you.***\n";
-                cin.get();
-                cout << "***You have no choice but to fight.***\n";
+                cout << "While you try your best to hide youself and sneak around the knights, you run into some monsters.***\n";
                 monster_encounter(player);
             };
 
             cin.get();
 
             if (rand()%10 > player->luck){
-                cout << "While you try your best to hide youself and sneak around the knights, you are still spotted.***\n";
-                cin.get();
-                cout << "Seeing you with the dragon, the knights draw their swords and charge toward you.***\n";
-                cin.get();
-                cout << "***You have no choice but to fight.***\n";
+                cout << "While you try your best to hide youself and sneak around the knights, you run into some monsters.***\n";
                 monster_encounter(player);
             };
 
