@@ -1,5 +1,10 @@
 #include <iostream>
 using namespace std;
+
+//Input: player's choice of storyline from chapter 2, player inputs as the choice of actions
+//Output: player's attributes can be affected depending on player's actions and interactions within the storyline
+//Function: the function lets the player go into the storyline of chapter 3 without the knights
+
 void no_knight(int storyline_choice, attribute *player){
     cin.get();
     cout << "**You continue your trip with the little boy. Along the way you almost get lost many times, but, fortunately, the little boy is familiar with the area, and he helps you point out the right direction. After a long trip, the player arrives at the frontier of the battle between the knights and the dragon**\n";

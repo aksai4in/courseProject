@@ -4,6 +4,10 @@
 #include <vector>
 using namespace std;
 
+//Input: pointer to the struct of the monster's attributes, pointer to the struct storing player's attributes
+//Output: player's attributes might be affected during the battle with monster in the function
+//Function: Let the player fight with the monster if encounter. The battle would be affected by the player's and the monster's attributes
+
 void fight_monster(monster_attribute *monster, attribute *player){
     srand(time(0));
     string answer;

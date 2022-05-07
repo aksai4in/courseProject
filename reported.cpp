@@ -1,5 +1,10 @@
 #include <iostream>
 using namespace std;
+
+//Input: pointer to the struct storing player's attributes
+//Output: player's attributes will be deleted by the function
+//Function: Let the player leave the village if the player refuses to help. The player would eventually die.
+
 void reported(attribute *player){
     cout << "After you leave the farmer, he reports you to the head of the village.\n";
     cin.get();

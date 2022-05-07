@@ -3,7 +3,11 @@
 #include "goblins.cpp"
 #include "reported.cpp"
 using namespace std;
-// function for a farmer storyline in the chapter 1
+
+////Input: pointer to the struct storing player's attributes
+//Output: player's attributes can be affected depending on player's actions and interactions with the farmer
+//Function: Let player go into the farmer storyline
+
 void farmer(attribute *player){
     cout << " - Hey, stranger, I heard that your name is " << player->name << ", right? What a weird name! (farmer)\n";
     cin.get();

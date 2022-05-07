@@ -2,7 +2,11 @@
 #include "list_potions_shop.cpp"
 #include "list_weapons_shop.cpp"
 using namespace std;
-// Function that allows a player to go to the village shop to buy weapons and potions
+
+//Input: pointer to the struct storing player's attributes
+//Output: player's attributes might changed depending on player's transactions within the shop
+//Function: the function let the player to interact with the shipowner to buy or sell weapons and potions
+
 void shop(attribute *player){
     cout << " - Good day, mister! (shop owner)\n";
     cin.get();

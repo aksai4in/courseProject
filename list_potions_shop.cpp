@@ -1,6 +1,11 @@
 #include <iostream>
 #include <iomanip>
 using namespace std;
+
+//Input: None
+//Output: list of all the potions avaialble in the shop
+//Function: show all the potions available in the shop for the player to pruchase 
+
 void list_potions_shop(){
     cout << setw(15) << "POTIONS LIST\n";
     cout << setw(2) << "#" << setw(10) << "NAME" << setw(9) << "POWER" << setw(9) << "PRICE" << endl;

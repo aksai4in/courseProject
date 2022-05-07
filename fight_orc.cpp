@@ -1,6 +1,10 @@
 #include <iostream>
 using namespace std;
-// function to fight the orc
+
+//Input: pointer to the struct storing player's attributes
+//Output: None
+//Function: Let the player go into this branch of storyline if the player choose to save the little boy's parents
+
 void fight_orc(attribute *player){
     cout << "***You defeated the orc***\n";
     cin.get();

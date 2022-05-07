@@ -1,7 +1,11 @@
 #include <iostream>
 #include <fstream>
 using namespace std;
-// saves the game progress aftger 1 and 2 chapter
+
+//Input: pointer to the struct storing player's attributes, the number of chapter progress the player would like to save
+//Output: txt file storing all the player's attributes
+//Function: the function exports all the player's attributes into a txt file to store the game progress for future gameplay
+
 void save(attribute *player, int chapter){
     if(chapter == 1){
         ofstream fout;

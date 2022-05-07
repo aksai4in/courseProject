@@ -2,7 +2,11 @@
 #include "rand_monster.cpp"
 #include "run_away_monster.cpp"
 using namespace std;
-// function for a situation when player meets a monster during the game
+
+//Input: player inputs as the choice of actions
+//Output: player's attributes can be affected during the battle with the monster
+//Function: the function is called when the player encounter a monster. The battle with the monster can be affected by the player's and the monster's attributes
+
 void monster_encounter(attribute *player){
     monster_attribute *ptr_monster;
     ptr_monster = new monster_attribute;

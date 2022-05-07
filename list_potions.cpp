@@ -1,6 +1,11 @@
 #include <iostream>
 #include <iomanip>
 using namespace std;
+
+//Input: pointer to the struct storing player's attributes
+//Output: list of all the potions the player has
+//Function: show all the potions the player has for player to choose from
+
 void list_potions(attribute *player){
     cout << setw(18) << "MY POTIONS\n";
     cout << setw(2) << "#" << setw(10) << "NAME" << setw(9) << "POWER" << endl;

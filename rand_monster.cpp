@@ -1,8 +1,12 @@
 #include <iostream>
 #include <time.h>
 #include <stdlib.h>
-//#include "monster_struct.cpp"
 using namespace std;
+
+//Input: pointer to the struct storing monster's attributes
+//Output: characteristics of a randomly selected monster will be assigned as the attributes of the monster player encounter
+//Function: the function randomly selected a kind of monster and assign the characteristics as the attributes of the monster encountered by player
+
 void rand_monster(monster_attribute *monster){
     srand(time(0));
     int type = rand() % 10;

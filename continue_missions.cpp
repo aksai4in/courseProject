@@ -1,7 +1,11 @@
 #include <iostream>
 #include "upgrade.cpp"
 using namespace std;
-// function for if a player wants to continue taking village missions after chapter 1
+
+//Input: pointer to the struct storing player's attributes
+//Output: depending on player's actions, each of his attributes might be different after the function
+//Function: Check whether the player would like to work on other side missions, visit the shop, or upgrade his attributes before proceeding with the main story
+
 void continue_missions(attribute *player){
     cout << "***Would you like to continue going on village missions?***\n";
     cout << "press 1 for: yes, I will take mor missions\n";

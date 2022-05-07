@@ -1,6 +1,10 @@
 #include <iostream>
 using namespace std;
-// function that lets a player to upgrade one of his characteristics with experience points
+
+//Input: pointer to the struct storing player's attributes
+//Output: player's attributes might be affected depending on how the player chooses to distribute his experience points to upgrade his attributes
+//Function: Let the player uses his experience points to upgrade his attributes
+
 void upgrade(attribute *player){
     cout << "***Which charecteristic would you like to improve?***\n";
     cout << "press 1 for stength\n";

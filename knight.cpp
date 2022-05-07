@@ -1,5 +1,10 @@
 #include <iostream>
 using namespace std;
+
+//Input: player's choice of storyline during chepter 2, pointer to the struct storing player's attributes
+//Output: player's attributes might be affected during the battle with dragon in the function
+//Function: Let player go into the knight storyline
+
 void knight(int storyline_choice, attribute *player){
     cin.get();
     cout << "***You continue your trip with the little boy***\n";

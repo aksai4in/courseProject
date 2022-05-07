@@ -1,5 +1,10 @@
 #include <iostream>
 using namespace std;
+
+//Input: pointer to the struct storing player's attributes
+//Output: player's attributes might be affected during the battle with deer in the function
+//Function: let player go on deer hunting if he chooses to help the hunter. The battle with the deer would be affected by the player's attributes
+
 void deer(attribute *player){
     cout << "***After leaving Burnson, you head to the forest to hunt deer***\n";
     cin.get();

@@ -1,5 +1,10 @@
 #include <iostream>
 using namespace std;
+
+//Input: pointer to the struct storing player's attributes
+//Output: player's attributes will be deleted by the function
+//Function: Let the player leave the village if the player refuses to listen to the hunter's advice. The player would eventually die.
+
 void goes_to_forest(attribute *player){
     cout << " - Well, I tried warning you. |sighs| (Burnson)\n";
     cin.get();

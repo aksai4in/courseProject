@@ -19,11 +19,17 @@
 #include "no_knight.cpp"
 using namespace std;
 
+//Input: player inputs as the choice of actions
+//Output: player's attributes can be affected depending on player's actions and interactions within each storyline
+//Function: the main function where all the story unfolds
+
 int main(){
     string name, answer;
+    //Create the pointer to store player's attributes
     attribute *player;
     int storyline_choice;
     player = new attribute;
+    //Player can choose to start or new game or load the previous gameplay
     cout << "Press 1 to start a new game\n";
     cout << "Press 2 to load an existing game\n";
     cout << "Your choice > ";
@@ -94,6 +100,7 @@ int main(){
         cout << " - Last but not least, mages are intelligent and elegant. They leverage power of spells to command natural elements to defeat their enemies. (Burnson)\n";
         cin.get();
         cout << " - Which one do you like the most, " << name << "? (Burnson)\n";
+        //Let the player choose the role. The corresponding attritutes would be assigned to player
         cout << "Please choose your character: \n";
         cout << "   press 1 to choose Warrior\n";
         cout << "   press 2 to choose Archer\n";
@@ -119,6 +126,7 @@ int main(){
         cout << "   Maggical power level: " << player->intelligence << "\n";
         cout << "   Shooting accuracy level: " << player->luck << "\n";
         cin.get();
+        //Farmer or hunter storyline would be randomly selected as the upcoming part of the story
         srand(time(0));
         int first_story_line = rand() % 2;
         if(first_story_line == 0){
@@ -140,8 +148,9 @@ int main(){
         if(answer == "1"){
             shop(player);
         }
+        //After the mission, player can choose to continue working on side missions to earn money and experience points
         continue_missions(player);
-        cout << "Would you like to save the game?\n";
+        cout << "Would you like to save the game? (Unsaved progress will be lost if you die or quit the game)\n";
         cout << "press 1 for yes\n";
         cout << "press 2 for no\n";
         cout << "Your choice > ";
@@ -151,9 +160,28 @@ int main(){
             cout << "Your choice > ";
             cin >> answer;
         }
+
         if(answer == "1"){
+            //After each chapter, player can choose to save the progress
             save(player, 1);
         }
+        //Player can also choose whether he would like to proceed to the next chapter
+        cout << "\nWould you like to continue?\n";
+        cout << "press 1 for yes\n";
+        cout << "press 2 for no\n";
+        cout << "Your choice > ";
+        cin >> answer;
+        while(answer != "1" && answer != "2"){
+            cout << "***unknown choice, please try again***\n";
+            cout << "Your choice > ";
+            cin >> answer;
+        }
+        if(answer == "2"){
+            delete player;
+            exit(0);
+        }
+        
+        //Player enters the second chpater, the the decisions made in this cahpter would after the story of chapter 3
         thief(player, storyline_choice);
         cout << "Would you like to save the game?\n";
         cout << "press 1 for yes\n";
@@ -169,6 +197,22 @@ int main(){
             save(player, 2);
         }
 
+        cout << "\nWould you like to continue?\n";
+        cout << "press 1 for yes\n";
+        cout << "press 2 for no\n";
+        cout << "Your choice > ";
+        cin >> answer;
+        while(answer != "1" && answer != "2"){
+            cout << "***unknown choice, please try again***\n";
+            cout << "Your choice > ";
+            cin >> answer;
+        }
+        if(answer == "2"){
+            delete player;
+            exit(0);
+        }        
+
+        //Storyline with or without knights will be randomly selected as the story of chapter 3
         if(rand()%2 == 0){
             knight(storyline_choice, player);
         }
@@ -222,6 +266,7 @@ int main(){
             }
 
             fin.close();
+
             thief(player, storyline_choice);
             cout << "Would you like to save the game?\n";
             cout << "press 1 for yes\n";
@@ -236,6 +281,22 @@ int main(){
             if(answer == "1"){
                 save(player, 2);
             }
+
+            cout << "\nWould you like to continue?\n";
+            cout << "press 1 for yes\n";
+            cout << "press 2 for no\n";
+            cout << "Your choice > ";
+            cin >> answer;
+            while(answer != "1" && answer != "2"){
+                cout << "***unknown choice, please try again***\n";
+                cout << "Your choice > ";
+                cin >> answer;
+            }
+
+            if(answer == "2"){
+                delete player;
+                exit(0);
+            }        
 
             if(rand()%2 == 0){
                 knight(storyline_choice, player);

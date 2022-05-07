@@ -3,7 +3,11 @@
 #include "rabbits.cpp"
 #include "goes_to_forest.cpp"
 using namespace std;
-//function for a hunter storyline in chapter 1
+
+//Input: pointer to the struct storing player's attributes
+//Output: player's attributes can be affected depending on player's actions and interactions with the hunter
+//Function: Let player go into the hunter storyline
+
 void hunter(attribute *player){
     cout << "Hey, buddy! glad to see that you're doing much better now. (Burnson)\n";
     cin.get();

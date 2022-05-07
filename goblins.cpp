@@ -1,5 +1,10 @@
 #include <iostream>
 using namespace std;
+
+//Input: pointer to the struct storing player's attributes
+//Output: player's attributes might be affected during the battle with goblin in the function
+//Function: Let the player fight with the monster. The battle would be affected by the player's and the monster's attributes
+
 void goblins(attribute *player){
     cout << "***Farmer tells you where he last saw goblins***\n";
     cin.get();

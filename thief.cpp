@@ -2,9 +2,12 @@
 #include "monster.cpp"
 #include "fight_orc.cpp"
 #include "run_away_orc.cpp"
-
 using namespace std;
-// main function for chapter 2
+
+//Input: pointer to the struct storing player's attributes, empty variable "storyline_choice" to record player's choice of actions
+//Output: player's attributes might be affected given his choices of actions and battles with monsters during the chapter
+//Function: the function lets the player go into chpater 2
+
 void thief(attribute *player, int &storyline_choice){
     srand(time(0));
     cout << "*********************************************************************************************\n\n";

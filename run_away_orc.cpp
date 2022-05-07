@@ -1,6 +1,10 @@
 #include <iostream>
 using namespace std;
-// function for if a player chooses to abandon boy's parents
+
+//Input: pointer to the struct storing player's attributes
+//Output: None
+//Function: Let the player go into this branch of storyline if the player choose not to save the little boy's parents
+
 void run_away_orc(){
     cout << " - No, we gotta go! (you)\n";
     cin.get();

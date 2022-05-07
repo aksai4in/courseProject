@@ -1,7 +1,11 @@
 #include <iostream>
 #include "structs.cpp"
 using namespace std;
-// assigns characteristics to the player depending on a player's choice
+
+//Input: Player's choice of role, pointer to the struct storing player's attributes
+//Output: Characteristics of the selected role assiged as player's attributes
+//Function: Assign the characteristics of the seleted role as the player's attributes
+
 void assign_char(string type, attribute *player){
     if(type == "1"){
         player->role = "Warrior";
