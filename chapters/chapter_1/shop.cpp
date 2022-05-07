@@ -1,8 +1,8 @@
 #include <iostream>
 #include "shop_includes/list_potions_shop.cpp"
-#include "shop_includes/list_potions.cpp"
+//#include "shop_includes/list_potions.cpp"
 #include "shop_includes/list_weapons_shop.cpp"
-#include "shop_includes/list_weapons.cpp"
+//#include "shop_includes/list_weapons.cpp"
 using namespace std;
 void shop(attribute *player){
     cout << " - Good day, mister! (shop owner)\n";

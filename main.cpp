@@ -6,6 +6,10 @@
 #include <vector>
 #include "main_includes/assign_char.cpp"
 #include "main_includes/save.cpp"
+#include "main_includes/list_potions.cpp"
+#include "main_includes/list_weapons.cpp"
+#include "main_includes/monster_struct.cpp"
+#include "main_includes/fight_monster.cpp"
 #include "chapters/chapter_1/farmer.cpp"
 #include "chapters/chapter_1/hunter.cpp"
 #include "chapters/chapter_1/shop.cpp"

@@ -84,10 +84,11 @@ void thief(attribute *player){
         cin.get();
         cout << " - Dad! Mom! That's my parents! Please help them, mister!\n";
         cin.get();
-        struct monster_attribute orc;
-        orc.strength = 6;
-        orc.luck = 4;
-        orc.HP = 90;
+        monster_attribute *ptr_orc;
+        ptr_orc = new monster_attribute;
+        ptr_orc->strength = 6;
+        ptr_orc->luck = 4;
+        ptr_orc->HP = 90;
         cout << "press 1 to see the orc's characteristics\n";
         cout << "press 2 to start a fight\n";
         cout << "press 3 to escape\n";
@@ -100,9 +101,9 @@ void thief(attribute *player){
             cin >> answer;
         }
         if(answer == "1"){
-            cout << "   orc strength: " << orc.strength << "\n";
-            cout << "   orc luck: " << orc.luck << "\n";
-            cout << "   orc HP: " << orc.HP << "\n";
+            cout << "   orc strength: " << ptr_orc->strength << "\n";
+            cout << "   orc luck: " << ptr_orc->luck << "\n";
+            cout << "   orc HP: " << ptr_orc->HP << "\n";
             cin.get();
             cout << "press 1 to save boy's parents\n";
             cout << "press 2 to to get away\n";
@@ -113,15 +114,21 @@ void thief(attribute *player){
                 cout << "Your choice > ";
                 cin >> answer;
             }
-            if(answer == "1") {fight_orc(player);}
+            if(answer == "1") {
+                fight_monster(ptr_orc, player);
+                fight_orc(player);
+                }
             else if(answer == "2"){run_away_orc();}
         }
         else if(answer == "2"){
+            fight_monster(ptr_orc, player);
             fight_orc(player);
         }
         else if(answer == "3"){
             run_away_orc();
         }
+
+        delete ptr_orc;
     }
     else if(answer == "2"){
         cout << "Get out before it gets ungly\n";
