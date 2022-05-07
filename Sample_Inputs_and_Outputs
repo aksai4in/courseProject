@@ -1,0 +1,22 @@
+Sample inputs: 
+- As a text-based RPG game, the only kind of inputs is integer (Except for when you're inputting the name, which is string).
+- For example, player will be facing decision like,
+
+" - What are you doing here, stranger? It is dangerous at this time of the day.(hunter)\n";
+"   Press 1 for: I got lost...\n";
+"   Press 2 for: Did you say dangerous?\n";
+"Your choice > ";
+cin >> answer;
+
+- and player only needs to input 1 or 2 to indicate his decision. Every decision might affect the later story development.
+
+Sample output:
+- Based on the player's actions, there might be different outcomes, and these outcomes will be shown like this,
+
+"**You continue your trip with the little boy. Along the way you almost get lost many times, but, fortunately, the little boy is familiar with the area, and he helps you point out the right direction. After a long trip, the player arrives at the frontier of the battle between the knights and the dragon**";
+
+"**When you and the little boy is getting closer to the cave, you see the campsite of the kingdom knights.It seems that they're gearing up and preparing to go into the cave**";
+
+**Feeling that the knights might be hiding something about the dragon, you decide to sneak into the cave to find the dragon to talk to it to find out the truth**";
+
+- Most of the outputs will be system promts or conversations with other characters.
