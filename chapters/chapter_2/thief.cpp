@@ -5,7 +5,7 @@
 
 using namespace std;
 // main function for chapter 2
-void thief(attribute *player){
+void thief(attribute *player, int &storyline_choice){
     srand(time(0));
     cout << "*********************************************************************************************\n";
     cout << "***After leaving the village, you travel alone toward the cave of the dragon deep in the forest.***\n";
@@ -119,15 +119,21 @@ void thief(attribute *player){
             if(answer == "1") {
                 fight_monster(ptr_orc, player);
                 fight_orc(player);
+                storyline_choice = 0;
                 }
-            else if(answer == "2"){run_away_orc();}
+            else if(answer == "2"){
+                run_away_orc();
+                storyline_choice = 1;
+            }
         }
         else if(answer == "2"){
             fight_monster(ptr_orc, player);
             fight_orc(player);
+            storyline_choice = 0;
         }
         else if(answer == "3"){
             run_away_orc();
+            storyline_choice = 1;
         }
 
         delete ptr_orc;

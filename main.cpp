@@ -22,6 +22,7 @@ using namespace std;
 int main(){
     string name, answer;
     attribute *player;
+    int storyline_choice;
     player = new attribute;
     cout << "Press 1 to start a new game\n";
     cout << "Press 2 to load an existing game\n";
@@ -149,7 +150,7 @@ int main(){
         if(answer == "1"){
             save(player, 1);
         }
-        thief(player);
+        thief(player, storyline_choice);
         cout << "Would you like to save the game?\n";
         cout << "press 1 for yes\n";
         cout << "press 2 for no\n";
@@ -163,7 +164,16 @@ int main(){
         if(answer == "1"){
             save(player, 2);
         }
+
+        if(rand()%2 == 0){
+            knight(storyline_choice, player);
+        }
+
+        else{
+            no_knight(storyline_choice, player);
+        }
     }
+    
     else if(answer == "2"){
         ifstream fin;
         fin.open("chapter2.txt");
@@ -195,8 +205,9 @@ int main(){
                     }
                 }
             }
+
             fin.close();
-            thief(player);
+            thief(player, storyline_choice);
             cout << "Would you like to save the game?\n";
             cout << "press 1 for yes\n";
             cout << "press 2 for no\n";
@@ -237,7 +248,6 @@ int main(){
             fin.close();
             
         }
-
     }
 }
 

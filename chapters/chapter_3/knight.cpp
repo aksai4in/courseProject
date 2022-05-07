@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-void knight(int choice, attribute *player){
+void knight(int storyline_choice, attribute *player){
     cin.get();
     cout << "***You continue your trip with the little boy. Along the way you almost get lost many times, but, fortunately, the little boy is familiar with the area, and he helps you point out the right direction. After a long trip, the player arrives at the frontier of the battle between the knights and the dragon**\n";
     cin.get();
@@ -18,7 +18,8 @@ void knight(int choice, attribute *player){
     cin.get();
     cout << " - Look! It's right there. It seems that it's asleep.\n Stay low and frosty. You won't want to wake it up. (knight)\n";
     cin.get();
-    if(choice == 0){
+    
+    if(storyline_choice == 0){
         cout << "***You and Birger hold the breath and get closer to the dragon\n";
         cin.get();
         cout << "***Strangely, you don't think the dragon is evil when you finnaly get a closer look of it.\n";
@@ -42,7 +43,7 @@ void knight(int choice, attribute *player){
         ptr_dragon->strength = 10; 
 
         fight_monster(ptr_dragon, player);
-        delete ptr_dragon;   
+        delete ptr_dragon;
 
         cout << "***The dragon wails painfully.***\n";
         cin.get();
@@ -58,12 +59,10 @@ void knight(int choice, attribute *player){
         cin.get();
         cout << "YOU WIN! Thank you for playing the game!\n";
         delete player;
-        exit(0)
+        exit(0);
         }
 
-    }
-
-    else if(choice == 1){
+    else if(storyline_choice == 1){
         cout << "***You hold your breath and try to get closer to the dragon.***\n";
         cin.get();
         cout << "***Suddenly, the little boy stands up and yells***\n";
@@ -99,6 +98,6 @@ void knight(int choice, attribute *player){
         cin.get();
         cout << "YOU WIN! Thank you for playing the game!\n";
         delete player;
-        exit(0)
+        exit(0);
     }
 }
