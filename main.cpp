@@ -190,9 +190,17 @@ int main(){
             }
             int wsize, psize;
             getline(fin, player->name);
-            fin >> player->role >> player->HP >> player->strength >> player->intelligence >> player->luck >> player->experience_points >> player->money >> wsize;
-            string name;
+            fin >> player->role >> player->HP >> player->strength >> player->intelligence >> player->luck >> player->experience_points >> player->money;
             fin.get();
+            string name;
+            getline(fin, name);
+            fin >> wsize;
+            fin.get();
+            for(int j = 0; j < 10; j++){
+                if(weapons[j].name == name){
+                    player->current_weapon = weapons[j];
+                }
+            }
             for(int i = 0; i < wsize; i++){
                 getline(fin, name);
                 for(int j = 0; j < 10; j++){
@@ -214,6 +222,7 @@ int main(){
             }
 
             fin.close();
+            cout << player->current_weapon.name << endl;
             thief(player, storyline_choice);
             cout << "Would you like to save the game?\n";
             cout << "press 1 for yes\n";
@@ -241,10 +250,18 @@ int main(){
         else{
             int wsize, psize;
             getline(fin, player->name);
-            fin >> player->role >> player->HP >> player->strength >> player->intelligence >> player->luck >> player->experience_points >> player->money >> wsize;
+            fin >> player->role >> player->HP >> player->strength >> player->intelligence >> player->luck >> player->experience_points >> player->money;
             fin.get();
+            string name;
+            getline(fin, name);
+            fin >> wsize;
+            fin.get();
+            for(int j = 0; j < 10; j++){
+                if(weapons[j].name == name){
+                    player->current_weapon = weapons[j];
+                }
+            }
             for(int i = 0; i < wsize; i++){
-                string name;
                 getline(fin, name);
                 for(int j = 0; j < 10; j++){
                     if(weapons[j].name == name){

@@ -1,5 +1,7 @@
-a l so
-Warrior 100 6 2 3 10 10 2
+al do
+Warrior 100 6 1 3 10 5
 Wooden Sword
-Legendary Sword Honshu
+2
+Wooden Sword
+Triple Scythe
 0

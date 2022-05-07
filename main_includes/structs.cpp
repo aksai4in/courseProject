@@ -23,7 +23,7 @@ struct attribute{
     int luck;
     int experience_points = 0;
     int money = 0;
-    weapon current_weapon;
+    struct weapon current_weapon;
     vector<weapon> my_weapons;
     vector<potion> my_potions;
 };
