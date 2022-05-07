@@ -1,7 +1,7 @@
 #include <iostream>
-#include "farmer_includes/slimes.cpp"
-#include "farmer_includes/goblins.cpp"
-#include "farmer_includes/reported.cpp"
+#include "slimes.cpp"
+#include "goblins.cpp"
+#include "reported.cpp"
 using namespace std;
 // function for a farmer storyline in the chapter 1
 void farmer(attribute *player){

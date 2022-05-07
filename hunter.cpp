@@ -1,7 +1,7 @@
 #include <iostream>
-#include "hunter_includes/deer.cpp"
-#include "hunter_includes/rabbits.cpp"
-#include "hunter_includes/goes_to_forest.cpp"
+#include "deer.cpp"
+#include "rabbits.cpp"
+#include "goes_to_forest.cpp"
 using namespace std;
 //function for a hunter storyline in chapter 1
 void hunter(attribute *player){

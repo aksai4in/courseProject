@@ -1,7 +1,6 @@
 #include <iostream>
-#include "monster_includes/rand_monster.cpp"
-//#include "monster_includes/fight_monster.cpp"
-#include "monster_includes/run_away_monster.cpp"
+#include "rand_monster.cpp"
+#include "run_away_monster.cpp"
 using namespace std;
 // function for a situation when player meets a monster during the game
 void monster_encounter(attribute *player){

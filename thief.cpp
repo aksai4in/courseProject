@@ -1,7 +1,7 @@
 #include <iostream>
-#include "thief_includes/monster.cpp"
-#include "thief_includes/fight_orc.cpp"
-#include "thief_includes/run_away_orc.cpp"
+#include "monster.cpp"
+#include "fight_orc.cpp"
+#include "run_away_orc.cpp"
 
 using namespace std;
 // main function for chapter 2

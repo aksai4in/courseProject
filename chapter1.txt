@@ -1,7 +1,6 @@
 al do
-Warrior 100 6 1 3 10 5
+Warrior 100 6 1 3 0 20
 Wooden Sword
-2
+1
 Wooden Sword
-Triple Scythe
 0

@@ -1,5 +1,5 @@
 #include <iostream>
-#include "continue_missions_includes/upgrade.cpp"
+#include "upgrade.cpp"
 using namespace std;
 // function for if a player wants to continue taking village missions after chapter 1
 void continue_missions(attribute *player){

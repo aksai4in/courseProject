@@ -4,19 +4,19 @@
 #include <time.h>
 #include <string>
 #include <vector>
-#include "main_includes/assign_char.cpp"
-#include "main_includes/save.cpp"
-#include "main_includes/list_potions.cpp"
-#include "main_includes/list_weapons.cpp"
-#include "main_includes/monster_struct.cpp"
-#include "main_includes/fight_monster.cpp"
-#include "chapters/chapter_1/farmer.cpp"
-#include "chapters/chapter_1/hunter.cpp"
-#include "chapters/chapter_1/shop.cpp"
-#include "chapters/chapter_1/continue_missions.cpp"
-#include "chapters/chapter_2/thief.cpp"
-#include "chapters/chapter_3/knight.cpp"
-#include "chapters/chapter_3/no_knight.cpp"
+#include "assign_char.cpp"
+#include "save.cpp"
+#include "list_potions.cpp"
+#include "list_weapons.cpp"
+#include "monster_struct.cpp"
+#include "fight_monster.cpp"
+#include "farmer.cpp"
+#include "hunter.cpp"
+#include "shop.cpp"
+#include "continue_missions.cpp"
+#include "thief.cpp"
+#include "knight.cpp"
+#include "no_knight.cpp"
 using namespace std;
 
 int main(){
@@ -222,7 +222,6 @@ int main(){
             }
 
             fin.close();
-            cout << player->current_weapon.name << endl;
             thief(player, storyline_choice);
             cout << "Would you like to save the game?\n";
             cout << "press 1 for yes\n";
