@@ -4,6 +4,10 @@ This is the project for course COMP2113_ENGG1340.
 
 **Group members:** Aidar Kyshobaev(uid:3035918139, username:aksai4in), CHANG Ta Chuan Brook(uid:3035601712, username:rooktc0917) 
 
+**Compilation and execution instructions**
+In order to start the game run the main.cpp
+
+
 **Game Idea**
 
 We would like to develop a single-player role-playing game in which the player will be the adventurer with the final goal of defeating the dragon, or discover the truth behind the mystery about the dragon. There are several roles available for the player to choose from and each of them comes with different strengths and weaknesses. For example, a warrior has more strength points yet has low luck and intelligence. Along the journey, depending on the player’s actions, a series of random events will happen and the player will encounter villagers, knights, monsters, etc. Different actions will in turn affect the development of the following story. After defeating enemies, the player will obtain experience points that can be used to upgrade his charesteristics. Player can also go to the shop to buy weapons and potions. He can then choose a weapon to use. The mission of the player is to collect as many points as possible along the journey and figure out the way leading to the dragon to defeat it. There are several endings. Depending on the player’s actions, the journey will lead to different endings.
