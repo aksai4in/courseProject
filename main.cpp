@@ -173,7 +173,7 @@ int main(){
             no_knight(storyline_choice, player);
         }
     }
-    
+
     else if(answer == "2"){
         ifstream fin;
         fin.open("chapter2.txt");
@@ -207,6 +207,7 @@ int main(){
             }
 
             fin.close();
+            
             thief(player, storyline_choice);
             cout << "Would you like to save the game?\n";
             cout << "press 1 for yes\n";
@@ -221,6 +222,14 @@ int main(){
             if(answer == "1"){
                 save(player, 2);
             }
+
+            if(rand()%2 == 0){
+                knight(storyline_choice, player);
+            }
+
+            else{
+                no_knight(storyline_choice, player);
+            }            
         }
 
         else{
