@@ -71,8 +71,20 @@ void continue_missions(attribute *player){
             cout << "Your choice > ";
             cin >> answer;
         }
-        if(answer == "3"){
+        while(answer != "1" && answer != "2"){
             shop(player);
+            cout << "press 1 to take more missions\n";
+            cout << "press 2 to move on\n";
+            cout << "press 3 to visit the village shop\n";
+            cout << "Your choice > ";
+            cin >> answer;
+            while(answer != "1" && answer != "2" && answer != "3"){
+                cout << "***unknown choice, please try again***\n";
+                cout << "Your choice > ";
+                cin >> answer;
+            }
         }
+            
+        
     }
 }
