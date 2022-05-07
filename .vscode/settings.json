@@ -13,6 +13,7 @@
         "iomanip": "cpp",
         "system_error": "cpp",
         "xlocale": "cpp",
-        "string": "cpp"
+        "string": "cpp",
+        "initializer_list": "cpp"
     }
 }
