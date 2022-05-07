@@ -4,7 +4,8 @@ This is the project for course COMP2113_ENGG1340.
 
 **Group members:** Aidar Kyshobaev(uid:3035918139, username:aksai4in), CHANG Ta Chuan Brook(uid:3035601712, username:rooktc0917) 
 
-**Compilation and execution instructions**
+**Compilation and execution instructions:**
+
 In order to start the game run the main.cpp
 
 
