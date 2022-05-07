@@ -212,7 +212,7 @@ int main(){
             }
 
             fin.close();
-
+            
             thief(player, storyline_choice);
             cout << "Would you like to save the game?\n";
             cout << "press 1 for yes\n";
@@ -260,7 +260,6 @@ int main(){
                     }
                 }
             }
-            
             fin.close();
             
         }
