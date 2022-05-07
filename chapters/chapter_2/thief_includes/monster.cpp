@@ -7,11 +7,7 @@ using namespace std;
 void monster_encounter(attribute *player){
     monster_attribute *ptr_monster;
     ptr_monster = new monster_attribute;
-    cout << "***As you make your way in the forest, you come here some strange noise in the vicinity***\n";
-    cin.get();
     rand_monster(ptr_monster);
-    cout << "***You come closer to the source of the moise and see " << ptr_monster->name << "!***\n";
-    cin.get();
     cout << "press 1 to see monsters's characteristics\n";
     cout << "press 2 to start a fight\n";
     cout << "press 3 to escape\n";
@@ -24,6 +20,7 @@ void monster_encounter(attribute *player){
         cin >> answer;
     }
     if(answer == "1"){
+        cout << "   monster name: " << ptr_monster->name << "\n";
         cout << "   monster strength: " << ptr_monster->strength << "\n";
         cout << "   monster luck: " << ptr_monster->luck << "\n";
         cout << "   monster HP: " << ptr_monster->HP << "\n";

@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 #include <string>
 #include <vector>
 using namespace std;
@@ -7,18 +8,21 @@ void fight_monster(monster_attribute *monster, attribute *player){
     srand(time(0));
     string answer;
     double player_damage = 0;
+    cout << fixed;
+    cout << setprecision(2);
+    
     if (player->role == "Warrior"){
-        cout << "***You draw your sword out and prepare to fight " << monster->name << ".***\n";
+        cout << "\n***You draw your sword out and prepare to fight " << monster->name << ".***\n";
         player_damage = player->strength*player->current_weapon.power;
     }
 
     else if (player->role == "Archer"){
-        cout << "***You draw an arrow out and prepare to fight " << monster->name << ".***\n";
+        cout << "\n***You draw an arrow out and prepare to fight " << monster->name << ".***\n";
         player_damage = player->strength*player->current_weapon.power;    
     }
 
     else if (player->role == "Mage"){
-        cout << "***You draw your wand out and prepare to fight " << monster->name << ".***\n";
+        cout << "\n***You draw your wand out and prepare to fight " << monster->name << ".***\n";
         player_damage = player->intelligence*player->current_weapon.power;    
     }
 
@@ -33,46 +37,44 @@ void fight_monster(monster_attribute *monster, attribute *player){
         cout << "   press 3 to drink potion\n";
         cin >> answer;
         while(answer != "1" && answer != "2" && answer != "3"){
-            cout << "***unkonwn choice, please try again***\n";
+            cout << "\n***unkonwn choice, please try again***\n";
             cout << "Your choice > ";
             cin >> answer;
         }
 
         if (answer == "1"){
-            cout << "***You attack " << monster->name << "!***\n";
+            cout << "\n***You attack " << monster->name << "!***\n";
 
             monster->HP = monster->HP - player_damage;
-            cout << "***You make " << player_damage << " damage.***\n";
+            cout << "\n***You make " << player_damage << " damage.***\n";
                 
             if (rand()%10 < player->luck){
-                cout <<"\n***You successfully deliver extra damage!***\n\n";
+                cout <<"\n***You successfully deliver extra damage!***\n";
                 monster->HP = monster->HP - player_damage*0.5;
-                cout << "***You make " << player_damage*0.5 << " damage.***\n";
+                cout << "\n***You make " << player_damage*0.5 << " damage.***\n";
             }
 
             if (monster->HP <= 0){
                 cout << "\n***You defeated the monster!***\n";
                 cin.get();
-                cout << "***You continue your travel***\n";
-                cin.get();    
                 break;
             }
 
             cin.get();
 
-            cout << "***" << monster->name << " attacks you!***\n";
+            cout << "\n***" << monster->name << " attacks you!***\n";
 
             player->HP = player->HP - monster->strength;
-            cout << "*** " << monster->name <<  " make " << monster->strength << " damage.***\n";
+            cout << "\n*** " << monster->name <<  " make " << monster->strength << " damage.***\n";
 
             if (rand()%10 < monster->luck){
                 cout <<"\n***Monster delivers extra damage!***\n";
                 player->HP = player->HP - monster->strength*0.5;
-                cout << "*** " << monster->name <<  " make " << monster->strength*0.5 << " damage.***\n";
+                cout << "\n*** " << monster->name <<  " make " << monster->strength*0.5 << " damage.***\n";
             }
 
             if (player->HP <= 0){
-                cout << "***You are killed by the monster!***\n";
+                cout << "\n***You are killed by the monster!***\n";
                 cin.get();
                 cout << "GAME OVER\n\n";
                 cout << "***To retry, please restart the game and load your saved progress.***";

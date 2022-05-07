@@ -2,7 +2,7 @@
 using namespace std;
 // function to fight the orc
 void fight_orc(attribute *player){
-    cout << "you defeated the orc\n";
+    cout << "***You defeated the orc***\n";
     cin.get();
     cout << " - Thank you so much, mister! Without you around we'd be goners by now! (mother)\n";
     cin.get();

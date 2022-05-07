@@ -1,13 +1,13 @@
 #include <iostream>
 using namespace std;
 void goblins(attribute *player){
-    cout << "Farmer tells you where he last saw goblins.\n";
+    cout << "***Farmer tells you where he last saw goblins***\n";
     cin.get();
-    cout << "You head toward there immediately.\n";
+    cout << "***You head toward there immediately***\n";
     cin.get();    
-    cout << "After long search, you finally find the goblin hiding in the woods.\n";
+    cout << "***After long search, you finally find the goblin hiding in the woods***\n";
     cin.get();
-    
+
     monster_attribute *ptr_goblin;
     ptr_goblin = new monster_attribute;
     ptr_goblin->name = "Goblin";
@@ -18,7 +18,6 @@ void goblins(attribute *player){
     fight_monster(ptr_goblin, player);
     delete ptr_goblin;
     
-    cout << "You're still unfamiliar with your weapon, so you are barely able to defeat it\n";
+    cout << "***You're still unfamiliar with your weapon, so you are barely able to defeat it***\n";
     cin.get();
-    
 }

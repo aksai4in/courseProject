@@ -45,7 +45,7 @@ void continue_missions(attribute *player){
         cin.get();
         cout << "***You received 10 experience points***";
         player->experience_points += 10;
-        cout << "Your experience points > " << player->experience_points << "\n";
+        cout << "***Your experience points > " << player->experience_points << "***\n";
         cin.get();
         cout << "***Whould you like to upgrade your charecter?***\n";
         cout << "press 1 for yes\n";
