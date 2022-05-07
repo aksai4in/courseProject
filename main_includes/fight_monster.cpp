@@ -100,7 +100,7 @@ void fight_monster(monster_attribute *monster, attribute *player){
         else if (answer == "3"){
             list_potions(player);
             cout << "***Which potion would you like to use? Please input its number (Input -1 to exit).***\n";
-            cin >> -1;
+            cin >> answer;
             
             if (answer != "-1"){
                 while(stoi(answer) < 0 || stoi(answer) >= player->my_potions.size()){
