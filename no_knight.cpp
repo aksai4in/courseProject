@@ -28,7 +28,7 @@ void no_knight(int storyline_choice, attribute *player){
     cout << "***It seems to be asleep***\n";
     cin.get();
     cout << "***It looks innocent and different from what the knights described as evil and cruel***\n";
-    cin.ger();
+    cin.get();
     cout << "***It almost looks like a kid taking a nap***\n";
     cin.get();
     if(storyline_choice == 0){
