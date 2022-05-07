@@ -87,7 +87,7 @@ void fight_monster(monster_attribute *monster, attribute *player){
             cout << "***Which weapon would you like to use? Please input its number.***\n";
             cin >> answer;
 
-            while(stoi(answer) <= 0 || stoi(answer) >= player->my_weapons.size()+1){
+            while(stoi(answer) < 0 || stoi(answer) >= player->my_weapons.size()+1){
                 cout << "***unkonwn choice, please try again***\n\n";
                 cout << "Your choice > ";
                 cin >> answer;
