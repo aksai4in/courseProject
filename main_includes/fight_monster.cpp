@@ -108,7 +108,7 @@ void fight_monster(monster_attribute *monster, attribute *player){
                 cin >> answer;
             }
             
-            if (answer != "0"){
+            if (answer != "-1"){
                 player->HP = player->HP + player->my_potions[stoi(answer)].power;
 
                 cout << "***You drink the " << player->my_potions[stoi(answer)].name << " potion.***\n";
