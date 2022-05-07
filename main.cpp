@@ -191,10 +191,10 @@ int main(){
             int wsize, psize;
             getline(fin, player->name);
             fin >> player->role >> player->HP >> player->strength >> player->intelligence >> player->luck >> player->experience_points >> player->money >> wsize;
-            string weapon_name;
+            string name;
             fin.get();
             for(int i = 0; i < wsize; i++){
-                getline(fin, weapon_name);
+                getline(fin, name);
                 for(int j = 0; j < 10; j++){
                     if(weapons[j].name == name){
                         player->my_weapons.push_back(weapons[j]);
